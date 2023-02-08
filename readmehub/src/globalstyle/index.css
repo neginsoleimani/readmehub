@@ -108,8 +108,7 @@ i{
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1124px;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  margin: 0 11rem;
   height: 90vh;
 }
 
@@ -120,16 +119,32 @@ i{
 
 
 .primary-btn{
+  font-size: 0.7rem;
   font-weight: var(--font-bold);
   background: var(--first-color);
-  padding: 1rem 2.5rem;
-  border-radius: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
   color: var(--btn-color);
 }
 
 .primary-outline-btn{
   border: solid 1px var(--first-color);
+  font-size: 0.8rem;
+  width: max-content;
   color: var(--title-color);
-  padding: 1rem 1.5rem;
-  border-radius:1rem;
+  border-radius:0.5rem;
+}
+
+.secondary-btn{
+  background-color: var( --first-color-light);
+  border-radius:0.5rem;
+  color: var(--title-color);
+}
+
+.secondary-outline-btn{
+  border: solid 1px var(--first-color-light);
+  font-size: 0.8rem;
+  width: max-content;
+  color: var(--title-color);
+  border-radius:0.5rem;
 }

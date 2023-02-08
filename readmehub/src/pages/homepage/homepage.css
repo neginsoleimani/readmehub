@@ -1,0 +1,32 @@
+.homepage__title-box{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.homepage__title-box span{
+    color: var(--first-color);
+}
+
+.homepage__title-box p{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.homepage__btns{
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 0.5rem;
+    display: flex;
+}
+
+.protfolio__btn{
+    font-size: 0.9rem;
+}
+
+.project__btn{
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+    
+}
