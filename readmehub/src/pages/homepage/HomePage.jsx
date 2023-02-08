@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Components
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
+
 export default function HomePage() {
   return (
+
+    <>
+    <Navbar/>
     <div className="container">
       <div className="section">
         <h1>HomePage</h1>
@@ -24,5 +31,7 @@ export default function HomePage() {
         <a href="https://github.com/mammaddrik/readmehub"><i className=" bi-github"></i></a>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
