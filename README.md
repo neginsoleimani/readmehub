@@ -1,6 +1,8 @@
 # readmehub
 A Useful README Creator.
-- Create Project ---> done
-- Add Pages ---> done
-- Navbar --->
+
+# Project manager :clipboard:
+- Create Project ---> Done :white_check_mark:
+- Add Pages ---> Done :white_check_mark:
+- Navbar ---> Done :white_check_mark:
 - Footer --->
