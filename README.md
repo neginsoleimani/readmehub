@@ -6,4 +6,4 @@ A Useful README Creator.
 - Add Pages ---> Done :white_check_mark:
 - Navbar ---> Done :white_check_mark:
 - Footer ---> Done :white_check_mark:
-- Responsive web design --->
+- Responsive web design ---> Done :white_check_mark:
