@@ -150,3 +150,16 @@ i{
   border-radius:0.5rem;
   font-weight: var(--font-bold);
 }
+
+
+
+/*=============== MEDIA QUERIES ===============*/
+/*========== Small devices ==========*/
+@media screen and (max-width:600px) {
+
+  .container{
+    margin: 0 1.5rem;
+    height: 90vh;
+  }
+  
+}
