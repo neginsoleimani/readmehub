@@ -7,8 +7,8 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #ffb81c;
-  --first-color-light:#385e9d;
+  --first-color: #6e40c9;
+  --first-color-light:#3C4048;
   /* --first-color-alt:;
   --first-color-dark: ; */
   /* --first-color-gray:; */
@@ -16,8 +16,8 @@
   /* --title-color-black:; */
   --text-color: hsl(180, 4%, 72%);
   --text-color-light: hsl(180, 4%, 65%);
-  --btn-color:#0f203c;
-  --body-color:#0f203c;
+  --btn-color:#fff;
+  --body-color:#0d1117;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -128,6 +128,7 @@ i{
 
 .primary-outline-btn{
   border: solid 1px var(--first-color);
+  font-weight: var(--font-bold);
   font-size: 0.8rem;
   width: max-content;
   color: var(--title-color);
@@ -138,6 +139,7 @@ i{
   background-color: var( --first-color-light);
   border-radius:0.5rem;
   color: var(--title-color);
+  font-weight: var(--font-bold);
 }
 
 .secondary-outline-btn{
@@ -146,4 +148,5 @@ i{
   width: max-content;
   color: var(--title-color);
   border-radius:0.5rem;
+  font-weight: var(--font-bold);
 }

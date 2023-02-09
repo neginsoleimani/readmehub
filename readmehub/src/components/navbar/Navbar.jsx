@@ -10,10 +10,10 @@ export default function Navbar() {
         </h1>
       </div>
       <div>
-        <a href="" className="secondary-btn create__profile">
+        <a href="" className="primary-btn create__profile">
           Create Profile
         </a>
-        <a href="" className="secondary-outline-btn create__profile-icon">
+        <a href="" className="primary-outline-btn create__profile-icon">
           <i className=" bi-chevron-down"></i>
         </a>
       </div>
