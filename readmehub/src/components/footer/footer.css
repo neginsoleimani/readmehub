@@ -1,3 +1,20 @@
 .footer{
     padding: 2.5rem 11rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link-icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
+
+.footer__links ul{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.footer__links ul li{
+    color: var(--first-color-light);
 }
