@@ -30,7 +30,7 @@ export default function HomePage() {
               to="/readme/project"
               className="secondary-btn project__btn"
             >
-             Craete Readme for my Project
+             Create Readme for my Project
             </Link>
             <Link to="/readme/protfolio" className="primary-btn protfolio__btn">
               Create Protfolio

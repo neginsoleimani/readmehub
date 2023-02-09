@@ -6,23 +6,21 @@ export default function Footer() {
   return (
     <div className='footer'>
       <div className='footer__title-box'>
-        <h4>readmehub</h4>
-        <h5>© Copyright 2023 ProfileMe.dev. All rights reserved.</h5>
+      <div className='footer__links'>
+          <ul>
+            <li>© 2023 READMEhub, Inc.</li>
+            <li>Create Profile</li>
+            <li>What is README?</li>
+          </ul>
+        </div>
       </div>
       <div className='footer__link-box'>
         <div className='footer__link-icons'>
-          <i className='bi bi-github'></i>
-          <i className='bi bi-instagram'></i>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href="https://instagram.com/"><i className='bi bi-instagram'></i></a>
+          <a href="https://github.com/"><i className='bi bi-github'></i></a>
         </div>
-        <div className='footer__links'>
-          <ul>
-            <li>Home Page</li>
-            <li>Create Profile</li>
-            <li>Changelog</li>
-            <li>Leave Feedback</li>
-          </ul>
-        </div>
-
       </div>
     </div>
   )

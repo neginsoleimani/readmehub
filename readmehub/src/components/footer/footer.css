@@ -1,7 +1,9 @@
 .footer{
-    padding: 2.5rem 11rem;
+    padding: 1rem 11rem;
     display: flex;
     justify-content: space-between;
+    background-color: var(--first-color-light);
+    align-items: center;
 }
 
 .footer__link-icons{
@@ -10,11 +12,19 @@
     gap: 0.8rem;
 }
 
+.footer__link-icons i{
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+
 .footer__links ul{
     display: flex;
     gap: 0.8rem;
 }
 
 .footer__links ul li{
-    color: var(--first-color-light);
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: var(--font-bold);
 }
