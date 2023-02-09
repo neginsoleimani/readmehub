@@ -8,13 +8,13 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: #6e40c9;
-  --first-color-light:#3C4048;
+  --first-color-light:#1d242d;
   /* --first-color-alt:;
   --first-color-dark: ; */
   /* --first-color-gray:; */
   --title-color: #efefef;
   /* --title-color-black:; */
-  --text-color: hsl(180, 4%, 72%);
+  --text-color:#959da5;
   --text-color-light: hsl(180, 4%, 65%);
   --btn-color:#fff;
   --body-color:#0d1117;
