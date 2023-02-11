@@ -1,19 +1,19 @@
-.homepage__title-box{
+.homepage__title-box {
     text-align: center;
     margin-top: 4rem;
     font-size: 1.8rem;
 }
 
-.homepage__title-box span{
+.homepage__title-box span {
     color: var(--first-color);
 }
 
-.homepage__title-box p{
+.homepage__title-box p {
     font-size: 1rem;
     margin: 0.5rem 0;
 }
 
-.homepage__btns{
+.homepage__btns {
     align-items: center;
     justify-content: center;
     margin: 2rem 0;
@@ -21,12 +21,65 @@
     display: flex;
 }
 
-.protfolio__btn{
+.protfolio__btn {
     font-size: 0.9rem;
 }
 
-.project__btn{
+.project__btn {
     font-size: 0.9rem;
     padding: 0.8rem 1.5rem;
+
+}
+
+.homepage__image-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.homepage__image{
+    width: 80%;
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+/*========== Small devices ==========*/
+@media screen and (max-width:750px) {
+
+
     
+    .homepage__title-box {
+        width: 100%;
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+        
+    }
+
+    .homepage__title-box p{
+        font-size: 0.79rem;
+    }
+
+    .homepage__btns {
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .protfolio__btn {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+
+    .project__btn {
+        text-align: center;
+        font-size: 0.8rem;
+
+    }
+
 }

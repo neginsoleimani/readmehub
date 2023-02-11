@@ -25,3 +25,34 @@
 .create__profile-icon i{
     font-size: 0.8rem;
 }
+
+
+/*=============== MEDIA QUERIES ===============*/
+/*========== Small devices ==========*/
+@media screen and (max-width:750px) {
+
+    .navbar{
+        padding: 1.5rem;
+    }
+
+    .navbar h1{
+        font-size: 1.2rem;
+    }
+
+    .create__profile-icon{
+        padding: 0.5rem 0.7rem;
+        margin-left:0.5rem ;
+    }
+    
+    .create__profile-icon i{
+        font-size: 0.7rem;
+    }
+    
+
+    .create__profile{
+       display: none;
+    }
+
+
+
+}

@@ -108,7 +108,6 @@ i{
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   margin: 0 11rem;
-  height: 90vh;
 }
 
 
@@ -149,4 +148,17 @@ i{
   color: var(--title-color);
   border-radius:0.5rem;
   font-weight: var(--font-bold);
+}
+
+
+
+/*=============== MEDIA QUERIES ===============*/
+/*========== Small devices ==========*/
+@media screen and (max-width:600px) {
+
+  .container{
+    margin: 0 1.5rem;
+    height: 90vh;
+  }
+  
 }
