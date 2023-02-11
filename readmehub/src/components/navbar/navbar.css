@@ -29,7 +29,7 @@
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
 
     .navbar{
         padding: 1.5rem;

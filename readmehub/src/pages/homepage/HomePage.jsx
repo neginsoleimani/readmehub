@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
+import Laptop from "../../asset/images/laptop.svg";
 
 // Components
 import Navbar from "../../components/navbar/Navbar";
@@ -26,16 +27,18 @@ export default function HomePage() {
           </div>
 
           <div className="homepage__btns">
-            <Link
-              to="/readme/project"
-              className="secondary-btn project__btn"
-            >
-             Create Readme for my Project
+            <Link to="/readme/project" className="secondary-btn project__btn">
+              Create Readme for my Project
             </Link>
             <Link to="/readme/protfolio" className="primary-btn protfolio__btn">
               Create Protfolio
             </Link>
           </div>
+
+          <div className="homepage__image-box">
+            <img src={Laptop} alt="laptop" className="homepage__image" />
+          </div>
+
         </div>
       </div>
       <Footer />

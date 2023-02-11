@@ -31,10 +31,21 @@
 
 }
 
+.homepage__image-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.homepage__image{
+    width: 80%;
+}
+
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
 
 
     
