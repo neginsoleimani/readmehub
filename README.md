@@ -7,3 +7,4 @@ A Useful README Creator.
 - Navbar ---> Done :white_check_mark:
 - Footer ---> Done :white_check_mark:
 - Responsive web design ---> Done :white_check_mark:
+- Add assets Folder ---> Done :white_check_mark:
