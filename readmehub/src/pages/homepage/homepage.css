@@ -79,6 +79,12 @@
   color: var(--first-color);
 }
 
+.feature__item h4{
+    margin-top: 0.8rem;
+    color: white;
+}
+
+
 .feature__item p{
   margin-top: 1rem;
 }

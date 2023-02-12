@@ -55,35 +55,27 @@ export default function HomePage() {
             <div className="feature__items">
 
               <div className="feature__item">
-                <div className="feature__icon"><i class="bi bi-airplane"></i></div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus deserunt enim
-                </p>
+                <div className="feature__icon"><i class="bi bi-code-square"></i></div>
+                <h4>Show your skills</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
 
                 <div className="feature__item">
-                <div className="feature__icon">10</div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus deserunt enim
-                </p>
+                <div className="feature__icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                <h4>Easy to use</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
 
               <div className="feature__item">
-                <div className="feature__icon">10</div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus deserunt enim
-                </p>
+                <div className="feature__icon"><i class="bi bi-share-fill"></i></div>
+                <h4>Share your Social Network</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
 
               <div className="feature__item">
-                <div className="feature__icon">10</div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus deserunt enim
-                </p>
+                <div className="feature__icon"><i class="bi bi-graph-up"></i></div>
+                <h4>Analyze your State</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
 
             </div>
