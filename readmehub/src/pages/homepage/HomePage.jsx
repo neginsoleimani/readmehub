@@ -39,6 +39,17 @@ export default function HomePage() {
             <img src={Laptop} alt="laptop" className="homepage__image" />
           </div>
 
+          <div className="feature">
+            <div className="feature__title-box">
+              <h1>About README<span>hub</span></h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div>
+              
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
