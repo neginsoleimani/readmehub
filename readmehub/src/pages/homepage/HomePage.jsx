@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
 import Laptop from "../../asset/images/laptop.svg";
+import Readme from "../../asset/images/readme.jpg";
 
 // Components
 import Navbar from "../../components/navbar/Navbar";
@@ -53,31 +54,37 @@ export default function HomePage() {
             </div>
 
             <div className="feature__items">
-
               <div className="feature__item">
-                <div className="feature__icon"><i class="bi bi-code-square"></i></div>
+                <div className="feature__icon">
+                  <i class="bi bi-code-square"></i>
+                </div>
                 <h4>Show your skills</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
 
-                <div className="feature__item">
-                <div className="feature__icon"><i class="bi bi-lightning-charge-fill"></i></div>
+              <div className="feature__item">
+                <div className="feature__icon">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
                 <h4>Easy to use</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
 
               <div className="feature__item">
-                <div className="feature__icon"><i class="bi bi-share-fill"></i></div>
+                <div className="feature__icon">
+                  <i class="bi bi-share-fill"></i>
+                </div>
                 <h4>Share your Social Network</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
 
               <div className="feature__item">
-                <div className="feature__icon"><i class="bi bi-graph-up"></i></div>
+                <div className="feature__icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
                 <h4>Analyze your State</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
-
             </div>
           </div>
         </div>

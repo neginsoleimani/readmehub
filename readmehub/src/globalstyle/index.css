@@ -149,6 +149,17 @@ i{
   font-weight: var(--font-bold);
 }
 
+ /*========== Scroll bar ==========*/
+
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: var(--first-color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: .5rem;
+}
 
 
 /*=============== MEDIA QUERIES ===============*/
