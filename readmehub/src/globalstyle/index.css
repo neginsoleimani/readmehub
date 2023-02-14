@@ -110,7 +110,6 @@ i{
   margin: 0 11rem;
 }
 
-
 .section {
   padding: 4.5rem 0 2rem;
 }
@@ -150,7 +149,12 @@ i{
   font-weight: var(--font-bold);
 }
 
+ /*========== Scroll bar ==========*/
 
+
+::-webkit-scrollbar {
+ display: none;
+}
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
@@ -158,7 +162,6 @@ i{
 
   .container{
     margin: 0 1.5rem;
-    height: 90vh;
   }
   
 }
