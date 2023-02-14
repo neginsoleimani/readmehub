@@ -73,6 +73,7 @@ button,
 input {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  overflow-x: hidden;
 }
 
 body {
