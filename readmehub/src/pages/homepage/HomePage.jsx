@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import "./homepage.css";
 import Laptop from "../../asset/images/laptop.svg";
 import Readme from "../../asset/images/readme.jpg";
+import {
+  Flip,
+  Roll,
+  Zoom,
+  Bounce,
+  Rotate,
+  Slide,
+  Fade,
+} from "react-awesome-reveal";
 
 // Components
 import Navbar from "../../components/navbar/Navbar";
@@ -15,45 +24,56 @@ export default function HomePage() {
       <div className="container">
         <div className="landing__page">
           <div className="section">
-            <div className="homepage__title-box">
-              <h1>
-                Create an amazing
-                <br />
-                <span>Github profile </span>
-                in minutes
-              </h1>
-              <p>
-                Show off your skills, experience and projects. Generate markdown
-                for your profile with just a few clicks!
-              </p>
-            </div>
+            <Fade triggerOnce={"true"} duration={3000} delay={400}>
+              <div className="homepage__title-box">
+                <h1>
+                  Create an amazing
+                  <br />
+                  <span>Github profile </span>
+                  in minutes
+                </h1>
 
-            <div className="homepage__btns">
-              <Link to="/readme/project" className="secondary-btn project__btn">
-                Create Readme for my Project
-              </Link>
-              <Link
-                to="/readme/protfolio"
-                className="primary-btn protfolio__btn"
-              >
-                Create Protfolio
-              </Link>
-            </div>
+                <p>
+                  Show off your skills, experience and projects. Generate
+                  markdown for your profile with just a few clicks!
+                </p>
+              </div>
 
-            <div className="homepage__image-box">
-              <img src={Laptop} alt="laptop" className="homepage__image" />
-            </div>
+              <div className="homepage__btns">
+                <Link
+                  to="/readme/project"
+                  className="secondary-btn project__btn"
+                >
+                  Create Readme for my Project
+                </Link>
+                <Link
+                  to="/readme/protfolio"
+                  className="primary-btn protfolio__btn"
+                >
+                  Create Protfolio
+                </Link>
+              </div>
+            </Fade>
+
+            <Zoom triggerOnce={"true"} delay={600}>
+              <div className="homepage__image-box">
+                <img src={Laptop} alt="laptop" className="homepage__image" />
+              </div>
+            </Zoom>
           </div>
 
           <div className="feature">
-            <div className="feature__title-box">
-              <h1>
-                About README<span>hub</span>
-              </h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
+            <Fade triggerOnce={"true"} duration={4000} delay={800}>
+              <div className="feature__title-box">
+                <h1>
+                  About README<span>hub</span>
+                </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </Fade>
             <div className="feature__items">
+
+            <Zoom triggerOnce={"true"} delay={1000}>
               <div className="feature__item">
                 <div className="feature__icon">
                   <i class="bi bi-code-square"></i>
@@ -61,15 +81,19 @@ export default function HomePage() {
                 <h4>Show your skills</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
+              </Zoom>
 
-              <div className="feature__item">
-                <div className="feature__icon">
-                  <i class="bi bi-lightning-charge-fill"></i>
+              <Zoom triggerOnce={"true"} delay={1100}>
+                <div className="feature__item">
+                  <div className="feature__icon">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                  </div>
+                  <h4>Easy to use</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 </div>
-                <h4>Easy to use</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-              </div>
+              </Zoom>
 
+              <Zoom triggerOnce={"true"} delay={1200}>
               <div className="feature__item">
                 <div className="feature__icon">
                   <i class="bi bi-share-fill"></i>
@@ -77,7 +101,9 @@ export default function HomePage() {
                 <h4>Share your Social Network</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
+              </Zoom>
 
+              <Zoom triggerOnce={"true"} delay={1300}>
               <div className="feature__item">
                 <div className="feature__icon">
                   <i class="bi bi-graph-up"></i>
@@ -85,6 +111,8 @@ export default function HomePage() {
                 <h4>Analyze your State</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
+              </Zoom>
+
             </div>
           </div>
         </div>
