@@ -8,3 +8,5 @@ A Useful README Creator.
 - Footer ---> Done :white_check_mark:
 - Responsive web design ---> Done :white_check_mark:
 - Add scrollbar  --->  Done :white_check_mark:
+- Add Animation --->  Done :white_check_mark:
+- Add Document Page  --->  Done :white_check_mark:
