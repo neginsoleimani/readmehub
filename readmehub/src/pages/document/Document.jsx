@@ -1,10 +1,12 @@
 import React from "react";
 import "./document.css";
 import { Link } from "react-router-dom";
+import {Flip,Roll ,Zoom,Bounce,Rotate,Slide, Fade } from "react-awesome-reveal";
 
 // Components
 import Docnav from "../../components/docnav/Docnav";
 import Footer from "../../components/footer/Footer";
+import Codeeditor from "../../components/codeeditor/Codeeditor";
 
 
 
@@ -14,10 +16,9 @@ export default function Document() {
     <Docnav/>
     <div className="container">
       <div className="section">
-        <h1>Document</h1>
-        <br />
-        <br />
-        <br />
+        <Fade triggerOnce={'true'}  delay={300}>
+        <Codeeditor/>
+        </Fade>
         <Link to="/" className="secondary-outline-btn" >
           Back to HomePage
         </Link>
