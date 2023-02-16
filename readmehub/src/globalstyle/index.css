@@ -8,30 +8,30 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: #6e40c9;
-  --first-color-light:#1d242d;
+  --first-color-light: #1d242d;
   /* --first-color-alt:;
   --first-color-dark: ; */
   /* --first-color-gray:; */
   --title-color: #efefef;
   /* --title-color-black:; */
-  --text-color:#959da5;
+  --text-color: #959da5;
   --text-color-light: hsl(180, 4%, 65%);
-  --btn-color:#fff;
-  --body-color:#0d1117;
+  --btn-color: #fff;
+  --body-color: #0d1117;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Red Hat Display', sans-serif;
-  --second-font: 'Kaushan Script', cursive;
+  --body-font: "Red Hat Display", sans-serif;
+  --second-font: "Kaushan Script", cursive;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.5rem;
   --big-font-size: 1.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-bold: 700;
@@ -52,8 +52,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -97,7 +97,7 @@ img {
   height: auto;
 }
 
-i{
+i {
   font-size: 2rem;
   color: var(--title-color);
 }
@@ -111,8 +111,7 @@ i{
   padding: 4.5rem 0 2rem;
 }
 
-
-.primary-btn{
+.primary-btn {
   font-size: 0.7rem;
   font-weight: var(--font-bold);
   background: var(--first-color);
@@ -121,44 +120,41 @@ i{
   color: var(--btn-color);
 }
 
-.primary-outline-btn{
+.primary-outline-btn {
   border: solid 1px var(--first-color);
   font-weight: var(--font-bold);
   font-size: 0.8rem;
   width: max-content;
   color: var(--title-color);
-  border-radius:0.5rem;
+  border-radius: 0.5rem;
 }
 
-.secondary-btn{
-  background-color: var( --first-color-light);
-  border-radius:0.5rem;
+.secondary-btn {
+  background-color: var(--first-color-light);
+  border-radius: 0.5rem;
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
 
-.secondary-outline-btn{
+.secondary-outline-btn {
   border: solid 1px var(--first-color-light);
   font-size: 0.8rem;
   width: max-content;
   color: var(--title-color);
-  border-radius:0.5rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-bold);
 }
 
- /*========== Scroll bar ==========*/
-
+/*========== Scroll bar ==========*/
 
 ::-webkit-scrollbar {
- display: none;
+  display: none;
 }
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
-@media screen and (max-width:600px) {
-
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     margin: 0 1.5rem;
   }
-  
 }

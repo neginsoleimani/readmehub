@@ -15,7 +15,7 @@ export default function Document() {
     <div className="document">
     <Docnav/>
     <div className="container">
-      <div className="section">
+      <div className="">
         <Fade triggerOnce={'true'}  delay={300}>
         <Codeeditor/>
         </Fade>
@@ -24,7 +24,7 @@ export default function Document() {
         </Link>
       </div>
     </div>
-    <Footer/>
+    <Footer />
     </div>
   );
 }

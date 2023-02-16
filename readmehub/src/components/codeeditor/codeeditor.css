@@ -1,4 +1,130 @@
-.codeeditor__container{
-    height: 67.1vh;
-    z-index: 5;
+.codeeditor__container {
+
+  margin: 0 11rem;
+  z-index: 1;
+}
+
+.doc__info {
+  margin: 2rem auto;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.row {
+  display: flex;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.row .col {
+  flex: 1;
+}
+
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border-left: solid 2px var(--first-color);
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: var(--first-color-light);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  /* Icon */
+}
+.tab-label:hover {
+  background: var(--body-color);
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+  color: var(--first-color);
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #fff;
+  background: var(--first-color-light);
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+input:checked + .tab-label {
+  background: var(--body-color);
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+
+}
+
+.code{
+  background: var(--body-color);
+  border:solid 1px var(--first-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+code{
+background: var(--body-color);
+margin: 0.5rem;
+}
+
+/*=============== MEDIA QUERIES ===============*/
+/*========== Small devices ==========*/
+@media screen and (max-width:600px) {
+  .codeeditor__container {
+    margin: 0 ;
+  }
+
+  .row {
+    width: 100%;
+    margin:0;
+  }
+  
 }
