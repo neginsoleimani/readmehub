@@ -10,3 +10,5 @@ A Useful README Creator.
 - Add scrollbar  --->  Done :white_check_mark:
 - Add Animation --->  Done :white_check_mark:
 - Add Document Page  --->  Done :white_check_mark:
+- Add README.md editor ---> Done :white_check_mark:
+- Add Document Information ---> Done :white_check_mark:
