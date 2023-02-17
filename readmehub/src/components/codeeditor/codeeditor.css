@@ -61,6 +61,7 @@
   color: #fff;
   background: var(--first-color-light);
   transition: all 0.35s;
+  overflow: scroll;
 }
 
 .doc__info .tab-content p{
@@ -115,7 +116,92 @@ padding: 0.2rem 0.5rem;
 border-radius: 0.5rem;
 border: solid 1px var(--first-color);
 margin: 0.2rem;
+font-size: 0.75rem;
+line-height:2.2;
 }
+
+
+/* ---- Table ---- */
+.doc__info table {
+  margin: 0.8rem 0;
+  border: 1px solid var(--first-color);
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+.doc__info table tr {
+  background-color: transparent;
+  border: 1px solid var(--first-color);
+  padding: .35em;
+}
+
+.doc__info table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+.doc__info table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .doc__info table {
+    border: 0;
+  }
+
+  .doc__info table caption {
+    font-size: 1.3em;
+  }
+  
+  .doc__info table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .doc__info table tr {
+
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .doc__info table td {
+
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+
+  .doc__info table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .doc__info table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
