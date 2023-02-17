@@ -107,7 +107,7 @@ export default function Codeeditor() {
       </div>
 
       <div className="codeeditor__container">
-        <MDEditor value={value} onChange={setValue} style={{ zIndex: "0" }} />
+        <MDEditor value={value} onChange={setValue} style={{ zIndex: "1" }} />
       </div>
     </>
   );
