@@ -1,6 +1,6 @@
 import React from "react";
 import MDEditor from "@uiw/react-md-editor";
-import "./codeeditor.css";
+import './codeeditor.css'
 
 export default function Codeeditor() {
   const [value, setValue] = React.useState("**Hello world!!!**");
@@ -16,16 +16,16 @@ export default function Codeeditor() {
                   Headings
                 </label>
                 <div class="tab-content">
-                  To create a heading, add one to six # symbols before your
-                  heading text. The number of # you use will determine the size
+                  <p>
+                  To create a heading, add one to six <code className="code__small">#</code> symbols before your
+                  heading text. The number of <code className="code__small">#</code> you use will determine the size
                   of the heading.
+                  </p>
                   <div className="code">
                     <code>
-                      # The largest heading
-                      <br />
-                      ## The second largest heading <br />
-                      ###### The smallest heading
-                      <br />
+                      <span># The largest heading</span>
+                      <span>## The second largest heading </span>
+                      <span>###### The smallest heading</span>
                     </code>
                   </div>
                 </div>
@@ -36,10 +36,12 @@ export default function Codeeditor() {
                   Styling text
                 </label>
                 <div class="tab-content">
+                  <>
                   You can indicate emphasis with bold, italic, strikethrough,
                   subscript, or superscript text in comment fields and .md
                   files.
-                  <table>
+                  </>
+                  {/* <table>
                     <tr>
                       <th>Style</th>
                       <th>Syntax</th>
@@ -96,97 +98,7 @@ export default function Codeeditor() {
                       <th>Example</th>
                       <th>Output</th>
                     </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" id="chck3" />
-                <label class="tab-label" for="chck3">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>{" "}
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>{" "}
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>{" "}
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>{" "}
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
-                </div>
-              </div>{" "}
-              <div class="tab">
-                <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
-                  Item 2
-                </label>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                  in!
+                  </table> */}
                 </div>
               </div>
             </div>
