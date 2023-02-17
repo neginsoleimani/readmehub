@@ -1,10 +1,10 @@
 .footer{
     padding: 1rem 11rem;
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: var(--first-color-light);
     align-items: center;
-    z-index: 1;
 }
 
 .footer__link-icons{
