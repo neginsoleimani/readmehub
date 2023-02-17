@@ -17,9 +17,9 @@ export default function Codeeditor() {
                 </label>
                 <div class="tab-content">
                   <p>
-                    To create a heading, add one to six{" "}
+                    To create a heading, add one to six
                     <code className="code__small">#</code> symbols before your
-                    heading text. The number of{" "}
+                    heading text. The number of
                     <code className="code__small">#</code> you use will
                     determine the size of the heading.
                   </p>
@@ -245,6 +245,57 @@ export default function Codeeditor() {
                       <span>The background color should be `#ffffff` for light mode and `#0d1117` for dark mode.</span>
                     </code>
                   </div>
+                </div>
+              </div>
+              
+              <div class="tab">
+                <input type="checkbox" id="chck6" />
+                <label class="tab-label" for="chck6">
+                Links
+                </label>
+                <div class="tab-content">
+                  <p>
+                  You can create an inline link by wrapping link text in brackets <code className="code__small">{"[ ]"}</code> , and then wrapping the URL in parentheses <code className="code__small">{"( )"}</code>.
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>This site was built using [GitHub Pages](https://pages.github.com/).</span>
+                    </code>
+                  </div>
+                </div>
+              </div>
+ 
+              <div class="tab">
+                <input type="checkbox" id="chck7" />
+                <label class="tab-label" for="chck7">
+                Section links
+                </label>
+                <div class="tab-content">
+                  <p>
+                  You can link directly to a section in a rendered file by hovering over the section heading to expose the link
+                  </p>
+                </div>
+              </div>
+ 
+              <div class="tab">
+                <input type="checkbox" id="chck8" />
+                <label class="tab-label" for="chck8">
+                Relative links
+                </label>
+                <div class="tab-content">
+                  <p>
+                  You can define relative links and image paths in your rendered files to help readers navigate to other files in your repository.<br/><br/>
+                  A relative link is a link that is relative to the current file. For example, if you have a README file in root of your repository, and you have another file in docs/CONTRIBUTING.md, the relative link to CONTRIBUTING.md in your README might look like this:
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>[Contribution guidelines for this project](docs/CONTRIBUTING.md)</span>
+                    </code>
+                  </div>
+                  <p>
+                    <br/>
+                  GitHub will automatically transform your relative link or image path based on whatever branch you're currently on, so that the link or path always works. The path of the link will be relative to the current file. Links starting with <code className="code__small">/</code> will be relative to the repository root. You can use all relative link operands, such as <code className="code__small">./</code> and <code className="code__small">../</code>.
+                  </p>
                 </div>
               </div>
 

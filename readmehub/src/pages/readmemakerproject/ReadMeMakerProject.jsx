@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Components
-import Navbar from "../../components/navbar/Navbar";
+import Docnav from "../../components/docnav/Docnav";
 import Footer from "../../components/footer/Footer";
 
 export default function ReadMeMakerProject() {
   return (
     <>
-    <Navbar/>
+    <Docnav/>
     <div className="container">
       <div className="section">
         <h1>ReadMe Maker for my Project</h1>
