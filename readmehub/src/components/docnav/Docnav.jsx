@@ -16,7 +16,7 @@ export default function Docnav() {
       <Fade triggerOnce={'true'}  delay={100}>
       <div>
         <Link to="/" className="primary-outline-btn create__profile-icon">
-        <i class="bi bi-chevron-left"></i>
+        <i className="bi bi-chevron-left"></i>
         </Link>
       </div>
       </Fade>
