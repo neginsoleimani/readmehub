@@ -76,7 +76,7 @@ export default function HomePage() {
             <Zoom triggerOnce={"true"} delay={1000}>
               <div className="feature__item">
                 <div className="feature__icon">
-                  <i class="bi bi-code-square"></i>
+                  <i className="bi bi-code-square"></i>
                 </div>
                 <h4>Show your skills</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
@@ -86,7 +86,7 @@ export default function HomePage() {
               <Zoom triggerOnce={"true"} delay={1100}>
                 <div className="feature__item">
                   <div className="feature__icon">
-                    <i class="bi bi-lightning-charge-fill"></i>
+                    <i className="bi bi-lightning-charge-fill"></i>
                   </div>
                   <h4>Easy to use</h4>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
@@ -96,7 +96,7 @@ export default function HomePage() {
               <Zoom triggerOnce={"true"} delay={1200}>
               <div className="feature__item">
                 <div className="feature__icon">
-                  <i class="bi bi-share-fill"></i>
+                  <i className="bi bi-share-fill"></i>
                 </div>
                 <h4>Share your Social Network</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
@@ -106,7 +106,7 @@ export default function HomePage() {
               <Zoom triggerOnce={"true"} delay={1300}>
               <div className="feature__item">
                 <div className="feature__icon">
-                  <i class="bi bi-graph-up"></i>
+                  <i className="bi bi-graph-up"></i>
                 </div>
                 <h4>Analyze your State</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>

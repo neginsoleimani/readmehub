@@ -7,16 +7,16 @@ export default function Codeeditor() {
   return (
     <>
       <div className="doc__info">
-        <div class="row">
-          <div class="col">
-            <div class="tabs">
+        <div className="row">
+          <div className="col">
+            <div className="tabs">
 
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck1" />
-                <label class="tab-label" for="chck1">
+                <label className="tab-label" for="chck1">
                   Headings
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                     To create a heading, add one to six
                     <code className="code__small">#</code> symbols before your
@@ -34,12 +34,12 @@ export default function Codeeditor() {
                 </div>
               </div>
 
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck2" />
-                <label class="tab-label" for="chck2">
+                <label className="tab-label" for="chck2">
                   Styling text
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                     You can indicate emphasis with bold, italic, strikethrough,
                     subscript, or superscript text in comment fields and .md
@@ -187,12 +187,12 @@ export default function Codeeditor() {
                 </div>
               </div>
 
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck3" />
-                <label class="tab-label" for="chck3">
+                <label className="tab-label" for="chck3">
                   Quoting text
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                     You can quote text with a{" "}
                     <code className="code__small">{">"}</code>.
@@ -208,12 +208,12 @@ export default function Codeeditor() {
                 </div>
               </div>
 
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck4" />
-                <label class="tab-label" for="chck4">
+                <label className="tab-label" for="chck4">
                   Quoting code
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                     You can call out code or a command within a sentence with
                     single backticks. The text within the backticks will not be
@@ -232,12 +232,12 @@ export default function Codeeditor() {
                 </div>
               </div>
 
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck5" />
-                <label class="tab-label" for="chck5">
+                <label className="tab-label" for="chck5">
                 Supported color models
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                   In issues, pull requests, and discussions, you can call out colors within a sentence by using backticks. A supported color model within backticks will display a visualization of the color.
                   </p>
@@ -249,12 +249,12 @@ export default function Codeeditor() {
                 </div>
               </div>
               
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck6" />
-                <label class="tab-label" for="chck6">
+                <label className="tab-label" for="chck6">
                 Links
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                   You can create an inline link by wrapping link text in brackets <code className="code__small">{"[ ]"}</code> , and then wrapping the URL in parentheses <code className="code__small">{"( )"}</code>.
                   </p>
@@ -266,24 +266,24 @@ export default function Codeeditor() {
                 </div>
               </div>
  
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck7" />
-                <label class="tab-label" for="chck7">
+                <label className="tab-label" for="chck7">
                 Section links
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                   You can link directly to a section in a rendered file by hovering over the section heading to expose the link
                   </p>
                 </div>
               </div>
  
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck8" />
-                <label class="tab-label" for="chck8">
+                <label className="tab-label" for="chck8">
                 Relative links
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                   You can define relative links and image paths in your rendered files to help readers navigate to other files in your repository.<br/><br/>
                   A relative link is a link that is relative to the current file. For example, if you have a README file in root of your repository, and you have another file in docs/CONTRIBUTING.md, the relative link to CONTRIBUTING.md in your README might look like this:
@@ -300,12 +300,12 @@ export default function Codeeditor() {
                 </div>
               </div>
 
-              <div class="tab">
+              <div className="tab">
                 <input type="checkbox" id="chck9" />
-                <label class="tab-label" for="chck9">
+                <label className="tab-label" for="chck9">
                 Images
                 </label>
-                <div class="tab-content">
+                <div className="tab-content">
                   <p>
                   You can display an image by adding <code className="code__small">!</code> and wrapping the alt text in <code className="code__small">[ ]</code>. Then wrap the link for the image in parentheses <code className="code__small">( )</code> .
                   </p>
