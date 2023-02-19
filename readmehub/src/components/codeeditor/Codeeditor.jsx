@@ -10,6 +10,7 @@ export default function Codeeditor() {
         <div class="row">
           <div class="col">
             <div class="tabs">
+
               <div class="tab">
                 <input type="checkbox" id="chck1" />
                 <label class="tab-label" for="chck1">
@@ -296,6 +297,23 @@ export default function Codeeditor() {
                     <br/>
                   GitHub will automatically transform your relative link or image path based on whatever branch you're currently on, so that the link or path always works. The path of the link will be relative to the current file. Links starting with <code className="code__small">/</code> will be relative to the repository root. You can use all relative link operands, such as <code className="code__small">./</code> and <code className="code__small">../</code>.
                   </p>
+                </div>
+              </div>
+
+              <div class="tab">
+                <input type="checkbox" id="chck9" />
+                <label class="tab-label" for="chck9">
+                Images
+                </label>
+                <div class="tab-content">
+                  <p>
+                  You can display an image by adding <code className="code__small">!</code> and wrapping the alt text in <code className="code__small">[ ]</code>. Then wrap the link for the image in parentheses <code className="code__small">( )</code> .
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)</span>
+                    </code>
+                  </div>
                 </div>
               </div>
 

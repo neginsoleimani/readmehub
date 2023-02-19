@@ -65,12 +65,10 @@
   overflow: scroll;
 }
 
-.doc__info .tab-content p{
- padding-top: 0.5rem;
- text-align: justify;
+.doc__info .tab-content p {
+  padding-top: 0.5rem;
+  text-align: justify;
 }
-
-
 
 .doc__info .tab-close {
   display: flex;
@@ -106,23 +104,22 @@
   background: var(--body-color);
 }
 
-.doc__info code span{
-display: flex;
-padding: 0.2rem 0;
-flex-direction: column;
-font-size: 0.88rem;
+.doc__info code span {
+  display: flex;
+  padding: 0.2rem 0;
+  flex-direction: column;
+  font-size: 0.88rem;
 }
 
-.code__small{
-background-color: var(--body-color);
-padding: 0.2rem 0.5rem;
-border-radius: 0.5rem;
-border: solid 1px var(--first-color);
-margin: 0.2rem;
-font-size: 0.75rem;
-line-height:2.2;
+.code__small {
+  background-color: var(--body-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px var(--first-color);
+  margin: 0.2rem;
+  font-size: 0.75rem;
+  line-height: 2.2;
 }
-
 
 /* ---- Table ---- */
 .doc__info table {
@@ -134,77 +131,23 @@ line-height:2.2;
   table-layout: fixed;
 }
 
-
 .doc__info table tr {
   background-color: transparent;
   border: 1px solid var(--first-color);
-  padding: .35em;
+  padding: 0.35em;
 }
 
 .doc__info table th,
 table td {
-  padding: .625em;
+  padding: 0.625em;
   text-align: center;
 }
 
 .doc__info table th {
-  font-size: .85em;
-  letter-spacing: .1em;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
-@media screen and (max-width: 600px) {
-  .doc__info table {
-    border: 0;
-  }
-
-  .doc__info table caption {
-    font-size: 1.3em;
-  }
-  
-  .doc__info table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  .doc__info table tr {
-
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  .doc__info table td {
-
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-
-  .doc__info table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .doc__info table td:last-child {
-    border-bottom: 0;
-  }
-}
-
-
-
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
@@ -213,11 +156,7 @@ table td {
     margin: 0;
   }
 
-  .tabs{
-    width: 100%;
-  }
-
-  .doc__info .tabs{
+  .doc__info .tabs {
     width: 100%;
   }
 
@@ -231,6 +170,53 @@ table td {
     width: 100%;
     margin: 0 auto;
   }
-  
 
+  .doc__info .row .col {
+    width: 90%;
+  }
+
+  .doc__info table {
+    border: 0;
+  }
+
+  .doc__info table caption {
+    font-size: 1.3em;
+  }
+
+  .doc__info table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .doc__info table tr {
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  .doc__info table td {
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  .doc__info table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .doc__info table td:last-child {
+    border-bottom: 0;
+  }
 }
