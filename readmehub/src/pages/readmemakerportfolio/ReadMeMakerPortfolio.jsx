@@ -23,7 +23,7 @@ export default class ReadMeMakerPortfolio extends Component {
 
                 <div>
                   <h2>Subtitle</h2>
-                  <input type="text" value={"name"} id="" />
+                  <input type="text" value={"A professional frontend developer from Iran"} id="" />
                 </div>
 
                 <div>
@@ -98,7 +98,7 @@ export default class ReadMeMakerPortfolio extends Component {
             <div className="readmeportfolio__result-box">
 
             </div>
-            
+
           </div>
         </div>
         <Footer />
