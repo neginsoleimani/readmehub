@@ -1,0 +1,171 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #6e40c9;
+  --first-color-light: #1d242d;
+  /* --first-color-alt:;
+  --first-color-dark: ; */
+  /* --first-color-gray:; */
+  --title-color: #efefef;
+  /* --title-color-black:; */
+  --text-color: #959da5;
+  --text-color-light: hsl(180, 4%, 65%);
+  --btn-color: #fff;
+  --body-color: #0d1117;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Red Hat Display", sans-serif;
+  --second-font: "Kaushan Script", cursive;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.5rem;
+  --big-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-bold: 700;
+  --font-black: 900;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1023px) {
+  :root {
+    --biggest-font-size: 6rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+i {
+  font-size: 2rem;
+  color: var(--title-color);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  margin: 0 11rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.primary-btn {
+  font-size: 0.7rem;
+  font-weight: var(--font-bold);
+  background: var(--first-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--btn-color);
+}
+
+.primary-outline-btn {
+  border: solid 1px var(--first-color);
+  font-weight: var(--font-bold);
+  font-size: 0.8rem;
+  width: max-content;
+  color: var(--title-color);
+  border-radius: 0.5rem;
+}
+
+.secondary-btn {
+  background-color: var(--first-color-light);
+  border-radius: 0.5rem;
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+.secondary-outline-btn {
+  border: solid 1px var(--first-color-light);
+  font-size: 0.8rem;
+  width: max-content;
+  color: var(--title-color);
+  border-radius: 0.5rem;
+  font-weight: var(--font-bold);
+}
+
+.code__small {
+  background-color: var(--body-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px var(--first-color);
+  margin: 0.2rem;
+  font-size: 0.75rem;
+  line-height: 2.2;
+}
+
+
+/*========== Scroll bar ==========*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*=============== MEDIA QUERIES ===============*/
+/*========== Small devices ==========*/
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 1.5rem;
+  }
+}
