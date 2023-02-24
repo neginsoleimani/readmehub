@@ -50,7 +50,7 @@ export default function ReadMeMakerProject() {
                 </div>
               </div>
 
-              <div>
+              <div className="table__content">
                 <h2>Table of content</h2>
                 <div>
                   <h5>
