@@ -145,6 +145,17 @@ i {
   font-weight: var(--font-bold);
 }
 
+.code__small {
+  background-color: var(--body-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px var(--first-color);
+  margin: 0.2rem;
+  font-size: 0.75rem;
+  line-height: 2.2;
+}
+
+
 /*========== Scroll bar ==========*/
 
 ::-webkit-scrollbar {
