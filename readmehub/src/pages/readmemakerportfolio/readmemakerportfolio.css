@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 0.5rem;
   overflow: scroll;
-  height: 80vh;
+  height: 72vh;
 }
 
 .readmeportfolio__input-box h2 {
@@ -36,7 +36,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   width: 100%;
 }
 
