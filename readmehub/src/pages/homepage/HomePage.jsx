@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
-import Laptop from "../../asset/images/laptop.svg";
-import Readme from "../../asset/images/readme.jpg";
+import Laptop from "../../asset/images/laptop.png";
+
 import {
   Flip,
   Roll,
