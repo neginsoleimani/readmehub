@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 0.5rem;
   overflow: scroll;
-  height: 72vh;
+  height: 100vh;
 }
 
 .readmeportfolio__input-box h2 {
