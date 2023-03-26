@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
 import Laptop from "../../asset/images/laptop.png";
+import Lamp from "../../asset/images/lamp.svg"
 
 import {
   Flip,
@@ -121,14 +122,23 @@ export default function HomePage() {
           <Fade triggerOnce={"true"} duration={4000} delay={800}>
               <div className="writereadme__title-box">
                 <h1>
-                  About README<span>hub</span>
+                How to write a good <span>README </span>File?
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>When you're writing your project's README, it should be able to answer the what, why, and the how of the project.</p>
               </div>
             </Fade>
           <div className="writereadme_dec">
-            <div><img src="" alt="rlamo img" /></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi at consequatur laboriosam ea. Facilis!</p></div>
+            <div><img src={Lamp} alt="lamp img" /></div>
+            <div><p>A good README is essential for any project. It is a summary of your project and gives users instructions & important information. This is a simple guide to help you make an accessible guide for your project.<br></br>
+            A very important thing to note is that there's not one right way to structure a good README. But there is one very wrong way, and that is to not include a README at all.<br></br>
+            Before we get started, it is also important to note that when you're writing your project's README, it should be able to answer the what, why, and the how of the project.<br></br>
+            Here are some guide questions that will help you out:<br></br>
+            1. What was your motivation?<br></br>
+            2. Why did you build this project?<br></br>
+            3. What problem does it solve?<br></br>
+            4. What did you learn?<br></br>
+            5. What makes your project stand out?<br></br>
+            At this point I am confident that you are in a position to add an interactive and inforamative guide to your next project or even an existing one and make your project standout.</p></div>
           </div>
 
           </div>
