@@ -30,7 +30,7 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("![Project Image]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
+    setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
   },[data])
 
   return (
