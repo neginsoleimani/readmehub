@@ -8,6 +8,7 @@ import Footer from "../../components/footer/Footer";
 import "../readmemakerportfolio/readmemakerportfolio.css";
 import MDEditor, { image } from "@uiw/react-md-editor";
 
+
 export default function ReadMeMakerProject() {
 
   const [data , setData]=useState({
@@ -31,7 +32,12 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
+<<<<<<< HEAD
     setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.subtitle+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
+=======
+    setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
+
+>>>>>>> f45a943635a152e7eecc8c5bf7c7d128343b2b9c
   },[data])
 
   return (
@@ -44,11 +50,11 @@ export default function ReadMeMakerProject() {
               <h2>Project Title </h2>
 
               <div>
-                <h4>Logo</h4>
+                <h4>Image</h4>
                 <input
                 name="logo"
                   type="text"
-                  value={data.logo}
+                  value={data.image}
                   onChange={changeHandler}
                 />
               </div>
@@ -98,8 +104,7 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>The technologies</h4>
-                  <textarea type="text" cols="20" rows="5" name="tec" value={data.tec}
-                  onChange={changeHandler} />
+                  <input type="text" value={""} id="" />
                 </div>
 
                 <div>
