@@ -28,7 +28,6 @@ export default function ReadMeMakerProject() {
     setValue("![Project Image]("+data.image+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.info)
   },[data])
 
-  
   return (
     <>
       <Docnav />
