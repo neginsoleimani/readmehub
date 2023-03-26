@@ -16,11 +16,11 @@ export default function Navbar() {
       </Fade>
       <Fade triggerOnce={'true'}  delay={100}>
       <div>
-
-        <a className="primary-btn create__profile">
+        <Link to='/document'>
+        <a href="" className="primary-btn create__profile">
           Document
         </a>
-
+        </Link>
         <Link to='/document'>
         <a href="" className="primary-outline-btn create__profile-icon">
           <i className=" bi-chevron-down"></i>
