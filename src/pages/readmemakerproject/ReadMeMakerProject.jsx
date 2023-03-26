@@ -13,9 +13,13 @@ export default function ReadMeMakerProject() {
   const [data , setData]=useState({
     logo :"Url",
     title:"Project name",
+    demo:"Url",
     info:"Write ...",
     tec:"JavaScript,Python,...",
-
+    challenges:"Write ...",
+    future:"Write ...",
+    dec:"Write ...",
+    dec_img:"Url",
   })
 
   const changeHandler = event =>{
@@ -26,7 +30,7 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("![Project Image]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.info + "</br>" + data.tec)
+    setValue("![Project Image]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
   },[data])
 
   return (
@@ -55,11 +59,33 @@ export default function ReadMeMakerProject() {
               </div>
 
               <div>
+                <h4>Demo</h4>
+                <input
+                name="demo"
+                  type="text"
+                  value={data.demo}
+                  onChange={changeHandler}
+                />
+              </div>
+
+              <h2>badges</h2>
+
+              <div>
+                <h4>Image</h4>
+                <input type="text" value={"url"} id="" />
+              </div>
+
+              <div>
+                <h4>Link</h4>
+                <input type="text" value={"url"} id="" />
+              </div>
+
+              <div>
                 <h2>Project description</h2>
 
                 <div>
                   <h4>What is your application does?</h4>
-                  <input type="text"  name="info" value={data.info}
+                  <textarea type="text" cols="20" rows="5" name="info" value={data.info}
                   onChange={changeHandler}/>
                 </div>
 
@@ -71,12 +97,14 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>Some of the challenges your face it</h4>
-                  <input type="text" value={""} id="" />
+                  <textarea type="text" cols="20" rows="5" name="challenges" value={data.challenges}
+                  onChange={changeHandler} />
                 </div>
 
                 <div>
                   <h4>Features you hope to implement in future</h4>
-                  <input type="text" value={""} id="" />
+                  <textarea type="text" cols="20" rows="5" name="future" value={data.future}
+                  onChange={changeHandler} />
                 </div>
               </div>
 
@@ -85,20 +113,21 @@ export default function ReadMeMakerProject() {
                 <div>
                   <h5>
                     If your README file is very long you might want to add table
-                    of the content
+                    of the content.
                   </h5>
                 </div>
 
                 <h2>How to install and run project</h2>
 
                 <div>
-                  <h4>Image</h4>
-                  <input type="text" value={"url"} id="" />
+                  <h4>Description</h4>
+                  <textarea type="text" cols="20" rows="5" name="dec" value={data.dec}
+                  onChange={changeHandler} />
                 </div>
 
                 <div>
-                  <h4>Description</h4>
-                  <input type="text" value={""} id="" />
+                  <h4>Image</h4>
+                  <input type="text" value={data.dec_img} name={"dec_img"} />
                 </div>
 
                 <h2>How to use the project</h2>
@@ -134,18 +163,6 @@ export default function ReadMeMakerProject() {
                 <div>
                   <h4>Description</h4>
                   <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-                  <h4>Link</h4>
-                  <input type="text" value={"url"} id="" />
-                </div>
-
-                <h2>badges</h2>
-
-                <div>
-                  <h4>Image</h4>
-                  <input type="text" value={"url"} id="" />
                 </div>
 
                 <div>
