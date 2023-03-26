@@ -40,7 +40,7 @@
   width: 80%;
 }
 
-.feature__title-box ,.writereadme__title-box{
+.feature__title-box {
   text-align: center;
 }
 
@@ -96,10 +96,44 @@
   margin-top: 1rem;
 }
 
+.writereadme__title-box{
+text-align: center;
+margin-top: 4.5rem;
+}
+
 .writereadme_dec{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   padding-top: 2.5rem;
+}
+
+.writereadme__title-box p{
+  margin: 0 auto;
+}
+
+.writereadme_info{
+  background-color: var(--first-color-light);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: -10px 0px 0px 0px #6E40C9; 
+  box-shadow: -10px 0px 0px 0px #6E40C9;
+}
+
+.writereadme_img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.writereadme_info p{
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.writereadme_dec span{
+color: var(--first-color);
+font-size: 1.3rem;
+font-weight: bold;
 }
 
 /*=============== MEDIA QUERIES ===============*/
@@ -170,4 +204,34 @@
     font-size: 2rem;
     color: var(--first-color);
   }
+
+
+  .writereadme_dec{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 2.5rem;
+  }
+
+  .writereadme__box h1 {
+    font-size: 1.5rem;
+  }
+
+  .writereadme__box p {
+    font-size: 0.79rem;
+  }
+
+  .writereadme_img img{
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .writereadme_info{
+    -webkit-box-shadow: 0px -10px 0px 0px #6E40C9; 
+    box-shadow: 0px -10px 0px 0px #6E40C9;
+  }
+
+  .writereadme_info p{
+    font-size: 0.9rem;
+  }
+  
 }
