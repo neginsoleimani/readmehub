@@ -11,9 +11,10 @@ import MDEditor, { image } from "@uiw/react-md-editor";
 export default function ReadMeMakerProject() {
 
   const [data , setData]=useState({
-    image :"",
-    title:"",
-    info:""
+    logo :"Url",
+    title:"Project name",
+    info:"Write ...",
+    tec:"JavaScript,Python,...",
 
   })
 
@@ -25,7 +26,7 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("![Project Image]("+data.image+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.info)
+    setValue("![Project Image]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.info + "</br>" + data.tec)
   },[data])
 
   return (
@@ -38,11 +39,11 @@ export default function ReadMeMakerProject() {
               <h2>Project Title </h2>
 
               <div>
-                <h4>Image</h4>
+                <h4>Logo</h4>
                 <input
                 name="image"
                   type="text"
-                  value={data.image}
+                  value={data.logo}
                   onChange={changeHandler}
                 />
               </div>
@@ -64,7 +65,8 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>The technologies</h4>
-                  <input type="text" value={""} id="" />
+                  <textarea type="text" cols="20" rows="5" name="tec" value={data.tec}
+                  onChange={changeHandler} />
                 </div>
 
                 <div>
