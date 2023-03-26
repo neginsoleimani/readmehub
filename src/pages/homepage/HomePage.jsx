@@ -115,6 +115,25 @@ export default function HomePage() {
 
             </div>
           </div>
+          
+        {/* write here */}
+          <div className="writereadme__box">
+          <Fade triggerOnce={"true"} duration={4000} delay={800}>
+              <div className="writereadme__title-box">
+                <h1>
+                  About README<span>hub</span>
+                </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </Fade>
+          <div className="writereadme_dec">
+            <div><img src="" alt="rlamo img" /></div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi at consequatur laboriosam ea. Facilis!</p></div>
+          </div>
+
+          </div>
+
+
         </div>
       </div>
       <Footer />

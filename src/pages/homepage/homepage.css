@@ -40,15 +40,23 @@
   width: 80%;
 }
 
-.feature__title-box {
+.feature__title-box ,.writereadme__title-box{
   text-align: center;
 }
 
-.feature__title-box h1 {
+.feature__title-box, h1 {
+  margin-bottom: 0.5rem;
+}
+
+.writereadme__title-box, h1{
   margin-bottom: 0.5rem;
 }
 
 .feature__title-box h1 span {
+  color: var(--first-color);
+}
+
+.writereadme__title-box h1 span {
   color: var(--first-color);
 }
 
@@ -86,6 +94,12 @@
 
 .feature__item p {
   margin-top: 1rem;
+}
+
+.writereadme_dec{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding-top: 2.5rem;
 }
 
 /*=============== MEDIA QUERIES ===============*/

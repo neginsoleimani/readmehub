@@ -13,6 +13,7 @@ export default function ReadMeMakerProject() {
   const [data , setData]=useState({
     logo :"Url",
     title:"Project name",
+    subtitle:"About project",
     demo:"Url",
     info:"Write ...",
     tec:"JavaScript,Python,...",
@@ -30,7 +31,7 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
+    setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.subtitle+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
   },[data])
 
   return (
@@ -55,6 +56,12 @@ export default function ReadMeMakerProject() {
               <div>
                 <h4>Title</h4>
                 <input type="text" name="title" value={data.title}
+                  onChange={changeHandler}/>
+              </div>
+
+              <div>
+                <h4>Subtitle</h4>
+                <input type="text" name="subtitle" value={data.subtitle}
                   onChange={changeHandler}/>
               </div>
 
