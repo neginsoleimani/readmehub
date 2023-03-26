@@ -41,7 +41,7 @@ export default function ReadMeMakerProject() {
               <div>
                 <h4>Logo</h4>
                 <input
-                name="image"
+                name="logo"
                   type="text"
                   value={data.logo}
                   onChange={changeHandler}
