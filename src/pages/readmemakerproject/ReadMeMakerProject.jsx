@@ -8,7 +8,6 @@ import Footer from "../../components/footer/Footer";
 import "../readmemakerportfolio/readmemakerportfolio.css";
 import MDEditor, { image } from "@uiw/react-md-editor";
 
-
 export default function ReadMeMakerProject() {
 
   const [data , setData]=useState({
@@ -28,9 +27,6 @@ export default function ReadMeMakerProject() {
   useEffect(()=>{
     setValue("![Project Image]("+data.image+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.info)
   },[data])
-
-
-
 
   return (
     <>
