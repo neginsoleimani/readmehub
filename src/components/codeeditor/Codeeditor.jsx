@@ -3,7 +3,7 @@ import MDEditor from "@uiw/react-md-editor";
 import "./codeeditor.css";
 
 export default function Codeeditor() {
-  const [value, setValue] = React.useState("**Hello world!!!**");
+  const [value, setValue] = React.useState();
   return (
     <>
       <div className="doc__info">
