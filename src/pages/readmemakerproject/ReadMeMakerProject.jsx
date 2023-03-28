@@ -11,29 +11,29 @@ import MDEditor, { image } from "@uiw/react-md-editor";
 export default function ReadMeMakerProject() {
 
   const [data , setData]=useState({
-    logo :"Url",
-    title:"Project name",
-    subtitle:"About project",
-    demo:"Url",
-    bag_img:"Url",
-    bag_link:"Url",
-    info:"Write ...",
-    tec:"JavaScript,Python,...",
-    challenges:"Write ...",
-    future:"Write ...",
-    install_dec:"Write ...",
-    install_dec_img:"Url",
-    use_dec:"Write ...",
-    use_dec_img:"Url",
-    credits_dec:"Write ...",
-    credits_dec_link:"Url",
-    credits_dec_img:"Url",
-    contribute_dec:"Write ...",
-    contribute_dec_link:"Url",
-    test_dec:"Write",
-    test_dec_link:"Url",
-    license_dec:"Write ...",
-    license_dec_link:"Url"
+    logo :"",
+    title:"",
+    subtitle:"",
+    demo:"",
+    bag_img:"",
+    bag_link:"",
+    info:"",
+    tec:"",
+    challenges:"",
+    future:"",
+    install_dec:"",
+    install_dec_img:"",
+    use_dec:"",
+    use_dec_img:"",
+    credits_dec:"",
+    credits_dec_link:"",
+    credits_dec_img:"",
+    contribute_dec:"",
+    contribute_dec_link:"",
+    test_dec:"",
+    test_dec_link:"",
+    license_dec:"",
+    license_dec_link:""
   })
 
   const changeHandler = event =>{
@@ -50,7 +50,7 @@ export default function ReadMeMakerProject() {
     +data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>"  
     +data.install_dec+ "</br>"+"![Install image]("+data.install_dec_img+")" + "</br>" 
     +data.use_dec+"</br>" +"![How to use image]("+data.use_dec_img+")"+"</br>"
-    +data.credits_dec+"</br>"+"[Click here]("+data.credits_dec_link+")"+"</br>"+"![credits image]("+data.credits_dec_img+")"
+    +data.credits_dec+"</br>"+"[Click here]("+data.credits_dec_link+")"+"</br>"+"![credits image]("+data.credits_dec_img+")"+"</br>"
     +data.contribute_dec+"<br/>"+"[Click here]("+data.contribute_dec_link+")"+"<br/>"
     +data.test_dec+"<br/>"+"[Click here]("+data.test_dec_link+")"+"<br/>"
     +data.license_dec+"</br>"+"[Click here]("+data.license_dec_link+")"+"<br/>"
@@ -71,20 +71,23 @@ export default function ReadMeMakerProject() {
                 <input
                 name="logo"
                   type="text"
-                  placeholder={data.logo}
+                  placeholder={"Url"}
+                  value={data.logo}
                   onChange={changeHandler}
                 />
               </div>
 
               <div>
                 <h4>Title</h4>
-                <input type="text" name="title" placeholder={data.title}
+                <input type="text" name="title" placeholder={"Project name"} 
+                value={data.title}
                   onChange={changeHandler}/>
               </div>
 
               <div>
                 <h4>Subtitle</h4>
-                <input type="text" name="subtitle" placeholder={data.subtitle}
+                <input type="text" name="subtitle" placeholder={"About project"}
+                value={data.subtitle}
                   onChange={changeHandler}/>
               </div>
 
@@ -93,7 +96,8 @@ export default function ReadMeMakerProject() {
                 <input
                 name="demo"
                   type="text"
-                  placeholder={data.demo}
+                  placeholder={"Url"}
+                  value={data.demo}
                   onChange={changeHandler}
                 />
               </div>
@@ -102,12 +106,12 @@ export default function ReadMeMakerProject() {
 
               <div>
                 <h4>Image</h4>
-                <input type="text" placeholder={data.bag_img} name="bag_img" onChange={changeHandler}/>
+                <input type="text" placeholder={"Url"} value={data.bag_img} name="bag_img" onChange={changeHandler}/>
               </div>
 
               <div>
                 <h4>Link</h4>
-                <input type="text" placeholder={data.bag_link} name="bag_link" onChange={changeHandler}/>
+                <input type="text" placeholder={"Url"} value={data.bag_link} name="bag_link" onChange={changeHandler}/>
               </div>
 
               <div>
@@ -115,25 +119,25 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>What is your application does?</h4>
-                  <textarea type="text" cols="20" rows="5" name="info" placeholder={data.info}
+                  <textarea type="text" cols="20" rows="5" name="info" value={data.info} placeholder={"Write ..."}
                   onChange={changeHandler}/>
                 </div>
 
                 <div>
                   <h4>The technologies</h4>
-                  <textarea type="text" cols="20" rows="5" name="tec" placeholder={data.tec}
+                  <textarea type="text" cols="20" rows="5" name="tec" value={data.tec} placeholder={"Write ..."} 
                   onChange={changeHandler} />
                 </div>
 
                 <div>
                   <h4>Some of the challenges your face it</h4>
-                  <textarea type="text" cols="20" rows="5" name="challenges" placeholder={data.challenges}
+                  <textarea type="text" cols="20" rows="5" name="challenges" value={data.challenges} placeholder={"Write ..."}
                   onChange={changeHandler} />
                 </div>
 
                 <div>
                   <h4>Features you hope to implement in future</h4>
-                  <textarea type="text" cols="20" rows="5" name="future" placeholder={data.future}
+                  <textarea type="text" cols="20" rows="5" name="future" value={data.future} placeholder={"Write ..."}
                   onChange={changeHandler} />
                 </div>
               </div>
@@ -151,27 +155,27 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>Description</h4>
-                  <textarea type="text" cols="20" rows="5" name="install_dec" placeholder={data.install_dec}
+                  <textarea type="text" cols="20" rows="5" name="install_dec" value={data.install_dec} placeholder={"Write ..."}
                   onChange={changeHandler} />
                 </div>
 
                 <div>
                   <h4>Image</h4>
-                  <input type="text" value={data.install_dec_img} name={"install_dec_img"} onChange={changeHandler}/>
+                  <input type="text" value={data.install_dec_img} placeholder={"Url"} name={"install_dec_img"} onChange={changeHandler}/>
                 </div>
 
                 <h2>How to use the project</h2>
 
                 <div>
                   <h4>Description</h4>
-                  <textarea type="text" cols="20" rows="5" name="use_dec" placeholder={data.use_dec}
+                  <textarea type="text" cols="20" rows="5" name="use_dec" value={data.use_dec} placeholder={"Write ..."}
                   onChange={changeHandler} />
                 </div>
 
 
                 <div>
                   <h4>Image</h4>
-                  <input type="text" placeholder={data.use_dec_img} name="use_dec_img" onChange={changeHandler}/>
+                  <input type="text" placeholder={"Url"} value={data.use_dec_img} name="use_dec_img" onChange={changeHandler}/>
                 </div>
 
                 <h2>Include the credits</h2>
@@ -180,16 +184,16 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>Description</h4>
-                  <textarea name="credits_dec" cols="30" rows="10" placeholder={data.credits_dec} onChange={changeHandler}></textarea>
+                  <textarea name="credits_dec" cols="30" rows="10" value={data.credits_dec} placeholder={"Write ..."} onChange={changeHandler}></textarea>
                 </div>
 
                 <div>
                   <h4>Link</h4>
-                  <input type="text" placeholder={data.credits_dec_link} name="credits_dec_link" onChange={changeHandler}/>
+                  <input type="text" placeholder={"Url"} value={data.credits_dec_link} name="credits_dec_link" onChange={changeHandler}/>
                 </div>
 
                   <h4>Image</h4>
-                  <input type="text" placeholder={data.credits_dec_img} name="credits_dec_img" onChange={changeHandler}/>
+                  <input type="text" placeholder={"Url"} value={data.credits_dec_img} name="credits_dec_img" onChange={changeHandler}/>
                 </div>
 
     
@@ -198,35 +202,35 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>Description</h4>
-                  <textarea name="contribute_dec" cols="30" rows="10" placeholder={data.contribute_dec} onChange={changeHandler}></textarea>
+                  <textarea name="contribute_dec" cols="30" rows="10" value={data.contribute_dec} placeholder={"Write ..."} onChange={changeHandler}></textarea>
                 </div>
 
                 <div>
                   <h4>Link</h4>
-                  <input type="text" placeholder={data.contribute_dec_link} name="contribute_dec_link" onChange={changeHandler}/>
+                  <input type="text" placeholder={"Url"} value={data.contribute_dec_link} name="contribute_dec_link" onChange={changeHandler}/>
                 </div>
 
                 <h2>Include test</h2>
 
                 <div>
                   <h4>Description</h4>
-                  <textarea name="test_dec" cols="30" rows="10" placeholder={data.test_dec} onChange={changeHandler}></textarea>
+                  <textarea name="test_dec" cols="30" rows="10" value={data.test_dec} placeholder={"Write ..."} onChange={changeHandler}></textarea>
                 </div>
 
                 <div>
                   <h4>Link</h4>
-                  <input type="text" placeholder={data.test_dec_link} name="test_dec_link" onChange={changeHandler}/>
+                  <input type="text" placeholder={"Url"} value={data.test_dec_link} name="test_dec_link" onChange={changeHandler}/>
                 </div>
 
                 <h2>Add license</h2>
                 <div>
                   <h4>Description</h4>
-                  <textarea name="license_dec" cols="30" rows="10" placeholder={data.license_dec} onChange={changeHandler}></textarea>
+                  <textarea name="license_dec" cols="30" rows="10" value={data.license_dec} placeholder={"Write ..."} onChange={changeHandler}></textarea>
                 </div>
 
                 <div>
                   <h4>Link</h4>
-                  <input type="text" placeholder={data.license_dec_link} name="license_dec_link" onChange={changeHandler}/>
+                  <input type="text" placeholder={"Url"} value={data.license_dec_link} name="license_dec_link" onChange={changeHandler}/>
                 </div>
 
                 <h2>Back to top</h2>
