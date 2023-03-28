@@ -32,7 +32,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck2" />
                 <label className="tab-label" for="chck2">
@@ -58,7 +57,7 @@ export default function Codeeditor() {
                       <tr>
                         <td data-label="Style">Bold</td>
                         <td data-label="Syntax">
-                          <code className="code__small">** **</code> or{" "}
+                          <code className="code__small">** **</code> or
                           <code className="code__small">__ __</code>
                         </td>
                         <td data-label="Example">
@@ -77,7 +76,7 @@ export default function Codeeditor() {
                           Italic
                         </td>
                         <td data-label="Syntax">
-                          <code className="code__small">* *</code> or{" "}
+                          <code className="code__small">* *</code> or
                           <code className="code__small">_ _</code>
                         </td>
                         <td data-label="Example">
@@ -114,7 +113,7 @@ export default function Codeeditor() {
                           Bold and nested italic
                         </td>
                         <td data-label="Syntax">
-                          <code className="code__small">** **</code> and{" "}
+                          <code className="code__small">** **</code> and
                           <code className="code__small">_ _</code>
                         </td>
                         <td data-label="Example">
@@ -124,8 +123,8 @@ export default function Codeeditor() {
                         </td>
                         <td data-label="Output">
                           <b style={{ fontSize: "0.8rem" }}>
-                            This text is{" "}
-                            <i style={{ fontSize: "0.8rem" }}>extremely</i>{" "}
+                            This text is
+                            <i style={{ fontSize: "0.8rem" }}>extremely</i>
                             important
                           </b>
                         </td>
@@ -185,7 +184,6 @@ export default function Codeeditor() {
                   </table>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck3" />
                 <label className="tab-label" for="chck3">
@@ -193,7 +191,7 @@ export default function Codeeditor() {
                 </label>
                 <div className="tab-content">
                   <p>
-                    You can quote text with a{" "}
+                    You can quote text with a
                     <code className="code__small">{">"}</code>.
                   </p>
                   <div className="code">
@@ -206,7 +204,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck4" />
                 <label className="tab-label" for="chck4">
@@ -230,7 +227,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck5" />
                 <label className="tab-label" for="chck5">
@@ -253,7 +249,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck6" />
                 <label className="tab-label" for="chck6">
@@ -263,7 +258,7 @@ export default function Codeeditor() {
                   <p>
                     You can create an inline link by wrapping link text in
                     brackets <code className="code__small">{"[ ]"}</code> , and
-                    then wrapping the URL in parentheses{" "}
+                    then wrapping the URL in parentheses
                     <code className="code__small">{"( )"}</code>.
                   </p>
                   <div className="code">
@@ -276,7 +271,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck7" />
                 <label className="tab-label" for="chck7">
@@ -289,7 +283,6 @@ export default function Codeeditor() {
                   </p>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck8" />
                 <label className="tab-label" for="chck8">
@@ -320,15 +313,14 @@ export default function Codeeditor() {
                     GitHub will automatically transform your relative link or
                     image path based on whatever branch you're currently on, so
                     that the link or path always works. The path of the link
-                    will be relative to the current file. Links starting with{" "}
+                    will be relative to the current file. Links starting with
                     <code className="code__small">/</code> will be relative to
                     the repository root. You can use all relative link operands,
-                    such as <code className="code__small">./</code> and{" "}
+                    such as <code className="code__small">./</code> and
                     <code className="code__small">../</code>.
                   </p>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck9" />
                 <label className="tab-label" for="chck9">
@@ -336,10 +328,10 @@ export default function Codeeditor() {
                 </label>
                 <div className="tab-content">
                   <p>
-                    You can display an image by adding{" "}
+                    You can display an image by adding
                     <code className="code__small">!</code> and wrapping the alt
                     text in <code className="code__small">[ ]</code>. Then wrap
-                    the link for the image in parentheses{" "}
+                    the link for the image in parentheses
                     <code className="code__small">( )</code> .
                   </p>
                   <div className="code">
@@ -352,7 +344,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck10" />
                 <label className="tab-label" for="chck10">
@@ -361,7 +352,7 @@ export default function Codeeditor() {
                 <div className="tab-content">
                   <p>
                     You can make an unordered list by preceding one or more
-                    lines of text with <code className="code__small">-</code>,{" "}
+                    lines of text with <code className="code__small">-</code>,
                     <code className="code__small">*</code>or
                     <code className="code__small">+</code>.
                   </p>
@@ -384,7 +375,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck11" />
                 <label className="tab-label" for="chck11">
@@ -394,8 +384,8 @@ export default function Codeeditor() {
                   <p>
                     You can create a nested list by indenting one or more list
                     items below another item. Type space characters in front of
-                    your nested list item until the list marker character{" "}
-                    <code className="code__small">-</code>or{" "}
+                    your nested list item until the list marker character
+                    <code className="code__small">-</code>or
                     <code className="code__small">*</code> lies directly below
                     the first character of the text in the item above it.
                   </p>
@@ -409,7 +399,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck12" />
                 <label className="tab-label" for="chck12">
@@ -419,7 +408,7 @@ export default function Codeeditor() {
                   <p>
                     To create a task list, preface list items with a hyphen and
                     space followed by <code className="code__small">[ ]</code>
-                    .To mark a task as complete, use{" "}
+                    .To mark a task as complete, use
                     <code className="code__small">[x]</code>.
                   </p>
                   <div className="code">
@@ -432,7 +421,7 @@ export default function Codeeditor() {
                   </div>
                   <p>
                     If a task list item description begins with a parenthesis,
-                    you'll need to escape it with{" "}
+                    you'll need to escape it with
                     <code className="code__small">\</code>:
                   </p>
                   <div className="code">
@@ -442,7 +431,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck13" />
                 <label className="tab-label" for="chck13">
@@ -450,7 +438,7 @@ export default function Codeeditor() {
                 </label>
                 <div className="tab-content">
                   <p>
-                    You can add emoji to your writing by typing{" "}
+                    You can add emoji to your writing by typing
                     <code className="code__small">:EMOJICODE:</code>, a colon
                     followed by the name of the emoji.
                   </p>
@@ -464,7 +452,7 @@ export default function Codeeditor() {
                     </code>
                   </div>
                   <p>
-                    For a full list of available emoji and codes, see{" "}
+                    For a full list of available emoji and codes, see
                     <a href="https://github.com/ikatyang/emoji-cheat-sheet">
                       Here
                     </a>
@@ -472,7 +460,6 @@ export default function Codeeditor() {
                   </p>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck14" />
                 <label className="tab-label" for="chck14">
@@ -485,7 +472,6 @@ export default function Codeeditor() {
                   </p>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck15" />
                 <label className="tab-label" for="chck15">
@@ -509,7 +495,6 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck16" />
                 <label className="tab-label" for="chck16">
@@ -527,28 +512,142 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-
               <div className="tab">
                 <input type="checkbox" id="chck17" />
                 <label className="tab-label" for="chck17">
-                Ignoring Markdown formatting
+                  Ignoring Markdown formatting
                 </label>
                 <div className="tab-content">
                   <p>
                     You can tell GitHub to ignore (or escape) Markdown
-                    formatting by using{" "}
-                    <code className="code__small">\</code>before
-                    the Markdown character.
+                    formatting by using <code className="code__small">\</code>
+                    before the Markdown character.
                   </p>
                   <div className="code">
                     <code>
-                      <span>Let's rename \*our-new-project\* to \*our-old-project\*.</span>
+                      <span>
+                        Let's rename \*our-new-project\* to \*our-old-project\*.
+                      </span>
+                    </code>
+                  </div>
+                </div>
+              </div>
+              <div className="tab">
+                <input type="checkbox" id="chck18" />
+                <label className="tab-label" for="chck18">
+                  Creating a table
+                </label>
+                <div className="tab-content">
+                  <p>
+                    You can create tables with pipes
+                    <code className="code__small">|</code>and hyphens
+                    <code className="code__small">-</code>. Hyphens are used to
+                    create each column's header, while pipes separate each
+                    column. You must include a blank line before your table in
+                    order for it to correctly render.
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>
+                        | Fname | Lname |<br></br>| ----- | ----- |<br></br>|
+                        Mohak | Moore |<br></br>| Mitra | Myers |<br></br>|
+                        Miina | Mills |
+                      </span>
+                    </code>
+                  </div>
+                </div>
+              </div>
+              <div className="tab">
+                <input type="checkbox" id="chck19" />
+                <label className="tab-label" for="chck19">
+                  Formatting content within your table
+                </label>
+                <div className="tab-content">
+                  <p>
+                    You can use formatting such as links, inline code blocks,
+                    and text styling within your table:
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>
+                        | Command | Description |<br></br>| --- | --- |<br></br>
+                        | `git status` | List all *new or modified* files |
+                        <br></br>| `git diff` | Show file differences that
+                        **haven't been** staged |
+                      </span>
+                    </code>
+                  </div>
+                  <p>
+                    You can align text to the left, right, or center of a column
+                    by including colons <code className="code__small">:</code>
+                    to the left, right, or on both sides of the hyphens within
+                    the header row.
+                  </p>
+
+                  <div className="code">
+                    <code>
+                      <span>
+                        | Left-aligned | Center-aligned | Right-aligned |
+                        <br></br>| :--- | :---: | ---: |<br></br>| git status |
+                        git status | git status |<br></br>| git diff | git diff
+                        | git diff |
+                      </span>
+                    </code>
+                  </div>
+
+                  <p>
+                    To include a pipe<code className="code__small">|</code> as
+                    content within your cell, use a
+                    <code className="code__small">\</code> before the pipe:
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>
+                        | Name | Character |<br></br>| --- | --- |<br></br>|
+                        Backtick | ` |<br></br>| Pipe | \| |
+                      </span>
                     </code>
                   </div>
                 </div>
               </div>
 
-              
+              <div className="tab">
+                <input type="checkbox" id="chck20" />
+                <label className="tab-label" for="chck20">
+                  Creating a collapsed section
+                </label>
+                <div className="tab-content">
+                  <p>
+                    You can temporarily obscure sections of your Markdown by
+                    creating a collapsed section that the reader can choose to
+                    expand. For example, when you want to include technical
+                    details in an issue comment that may not be relevant or
+                    interesting to every reader, you can put those details in a
+                    collapsed section.<br></br>Any Markdown within the
+                    <code className="code__small">{"<details>"}</code> block will be
+                    collapsed until the reader clicks ▶ to expand the details.
+                    Within the <code className="code__small">{"<details>"}</code>
+                    block, use the<code className="code__small">{"<summary>"}</code>
+                    tag to let readers know what is inside. The label appears to
+                    the right of ▶.
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>
+                        {"<details>"}<br></br>
+                        {"<summary>Tips for collapsed sections</summary>"}<br></br><br></br>
+                        {"### You can add a header"}<br></br>
+                        {"You can add text within a collapsed section."}<br></br>
+                        {"You can add an image or a code block, too."}<br></br>
+                        {"```ruby"}<br></br>
+                        {"   puts 'Hello World'"}<br></br>
+                        {"```"}<br></br>
+                        {"</details>"}
+                      </span>
+                    </code>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
