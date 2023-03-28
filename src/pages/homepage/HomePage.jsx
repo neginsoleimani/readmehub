@@ -134,7 +134,7 @@ export default function HomePage() {
             A very important thing to note is that there's not one right way to structure a good README. But there is one very wrong way, and that is to not include a README at all.<br></br><br></br>
             Before we get started, it is also important to note that when you're writing your project's README, it should be able to answer the what, why, and the how of the project.<br></br><br></br>
             Here are some guide questions that will help you out:<br></br>
-           <span>1.</span>  What was your motivation?<br></br>
+           <span>1.</span> What was your motivation?<br></br>
            <span>2.</span> Why did you build this project?<br></br>
            <span>3.</span> What problem does it solve?<br></br>
            <span>4.</span> What did you learn?<br></br>
