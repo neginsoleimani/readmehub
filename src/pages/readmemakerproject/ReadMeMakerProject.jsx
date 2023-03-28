@@ -15,12 +15,25 @@ export default function ReadMeMakerProject() {
     title:"Project name",
     subtitle:"About project",
     demo:"Url",
+    bag_img:"Url",
+    bag_link:"Url",
     info:"Write ...",
     tec:"JavaScript,Python,...",
     challenges:"Write ...",
     future:"Write ...",
-    dec:"Write ...",
-    dec_img:"Url",
+    install_dec:"Write ...",
+    install_dec_img:"Url",
+    use_dec:"Write ...",
+    use_dec_img:"Url",
+    credits_dec:"Write ...",
+    credits_dec_link:"Url",
+    credits_dec_img:"Url",
+    contribute_dec:"Write ...",
+    contribute_dec_link:"Url",
+    test_dec:"Write",
+    test_dec_link:"Url",
+    license_dec:"Write ...",
+    license_dec_link:"Url"
   })
 
   const changeHandler = event =>{
@@ -31,7 +44,16 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.subtitle+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "+data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>" + data.dec+ "</br>" +data.dec_img)
+    setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.subtitle+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "
+    +"![badges image]("+data.bag_img+")"+ "</br>"+"[Click here]("+data.bag_link+")"+"</br>"
+    +data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>"  
+    +data.install_dec+ "</br>"+"![Install image]("+data.install_dec_img+")" + "</br>" 
+    +data.use_dec+"</br>" +"![How to use image]("+data.use_dec_img+")"+"</br>"
+    +data.credits_dec+"</br>"+"[Click here]("+data.credits_dec_link+")"+"</br>"+"![credits image]("+data.credits_dec_img+")"
+    +data.contribute_dec+"<br/>"+"[Click here]("+data.contribute_dec_link+")"+"<br/>"
+    +data.test_dec+"<br/>"+"[Click here]("+data.test_dec_link+")"+"<br/>"
+    +data.license_dec+"</br>"+"[Click here]("+data.license_dec_link+")"+"<br/>"
+    )
   },[data])
 
   return (
@@ -79,12 +101,12 @@ export default function ReadMeMakerProject() {
 
               <div>
                 <h4>Image</h4>
-                <input type="text" value={"url"} id="" />
+                <input type="text" value={data.bag_img} name="bag_img" onChange={changeHandler}/>
               </div>
 
               <div>
                 <h4>Link</h4>
-                <input type="text" value={"url"} id="" />
+                <input type="text" value={data.bag_link} name="bag_link" onChange={changeHandler}/>
               </div>
 
               <div>
@@ -128,78 +150,89 @@ export default function ReadMeMakerProject() {
 
                 <div>
                   <h4>Description</h4>
-                  <textarea type="text" cols="20" rows="5" name="dec" value={data.dec}
+                  <textarea type="text" cols="20" rows="5" name="install_dec" value={data.install_dec}
                   onChange={changeHandler} />
                 </div>
 
                 <div>
                   <h4>Image</h4>
-                  <input type="text" value={data.dec_img} name={"dec_img"} />
+                  <input type="text" value={data.install_dec_img} name={"install_dec_img"} onChange={changeHandler}/>
                 </div>
 
                 <h2>How to use the project</h2>
 
                 <div>
-                  <h4>Image</h4>
-                  <input type="text" value={"url"} id="" />
+                  <h4>Description</h4>
+                  <textarea type="text" cols="20" rows="5" name="use_dec" value={data.use_dec}
+                  onChange={changeHandler} />
                 </div>
 
+
                 <div>
-                  <h4>Description</h4>
-                  <input type="text" value={""} id="" />
+                  <h4>Image</h4>
+                  <input type="text" value={data.use_dec_img} name="use_dec_img" onChange={changeHandler}/>
                 </div>
 
                 <h2>Include the credits</h2>
 
                 <div>
+
+                <div>
+                  <h4>Description</h4>
+                  <textarea name="credits_dec" cols="30" rows="10" value={data.credits_dec} onChange={changeHandler}></textarea>
+                </div>
+
+                <div>
+                  <h4>Link</h4>
+                  <input type="text" value={data.credits_dec_link} name="credits_dec_link" onChange={changeHandler}/>
+                </div>
+
                   <h4>Image</h4>
-                  <input type="text" value={"url"} id="" />
+                  <input type="text" value={data.credits_dec_img} name="credits_dec_img" onChange={changeHandler}/>
                 </div>
 
-                <div>
-                  <h4>Description</h4>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-                  <h4>Link</h4>
-                  <input type="text" value={"url"} id="" />
-                </div>
-
-                <h2>Add license</h2>
-                <div>
-                  <h4>Description</h4>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-                  <h4>Link</h4>
-                  <input type="text" value={"url"} id="" />
-                </div>
+    
 
                 <h2>How to contribute the project</h2>
 
                 <div>
                   <h4>Description</h4>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <textarea name="contribute_dec" cols="30" rows="10" value={data.contribute_dec} onChange={changeHandler}></textarea>
                 </div>
 
                 <div>
                   <h4>Link</h4>
-                  <input type="text" value={"url"} id="" />
+                  <input type="text" value={data.contribute_dec_link} name="contribute_dec_link" onChange={changeHandler}/>
                 </div>
 
                 <h2>Include test</h2>
 
                 <div>
                   <h4>Description</h4>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <textarea name="test_dec" cols="30" rows="10" value={data.test_dec} onChange={changeHandler}></textarea>
                 </div>
 
                 <div>
                   <h4>Link</h4>
-                  <input type="text" value={"url"} id="" />
+                  <input type="text" value={data.test_dec_link} name="test_dec_link" onChange={changeHandler}/>
                 </div>
+
+                <h2>Add license</h2>
+                <div>
+                  <h4>Description</h4>
+                  <textarea name="license_dec" cols="30" rows="10" value={data.license_dec} onChange={changeHandler}></textarea>
+                </div>
+
+                <div>
+                  <h4>Link</h4>
+                  <input type="text" value={data.license_dec_link} name="license_dec_link" onChange={changeHandler}/>
+                </div>
+
+                <h2>Back to top</h2>
+                <div>
+                 {/* back to top check box */}
+                </div>
+
               </div>
             </div>
           </div>
