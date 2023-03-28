@@ -45,7 +45,7 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("![Project Logo]("+data.logo+")" + "</br>" + "***" + data.title +"***"+"</br> "+data.subtitle+"</br> "+"![Project Demo]("+data.demo+")" +"</br> "
+    setValue("<a align='center'>"+"![Project Logo]("+data.logo+")"+"</a>" + "</br>" + "<h1 align='center'>" + data.title +"</h1>"+"<h3 align='center'>"+data.subtitle+"</h3>"+"<a align='center'> "+"![Project Demo]("+data.demo+")" +"</a> "+"</br>"
     +"![badges image]("+data.bag_img+")"+ "</br>"+"[Click here]("+data.bag_link+")"+"</br>"
     +data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>"  
     +data.install_dec+ "</br>"+"![Install image]("+data.install_dec_img+")" + "</br>" 
@@ -67,7 +67,7 @@ export default function ReadMeMakerProject() {
               <h2>Project Title </h2>
 
               <div>
-                <h4>Logo</h4>
+                <h4>Logo image</h4>
                 <input
                 name="logo"
                   type="text"
@@ -92,7 +92,7 @@ export default function ReadMeMakerProject() {
               </div>
 
               <div>
-                <h4>Demo</h4>
+                <h4>Demo image</h4>
                 <input
                 name="demo"
                   type="text"
