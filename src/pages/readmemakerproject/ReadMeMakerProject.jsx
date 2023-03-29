@@ -10,8 +10,13 @@ import MDEditor, { image } from "@uiw/react-md-editor";
 
 export default function ReadMeMakerProject() {
 
+  
+
   const [data , setData]=useState({
     logo :"",
+    logo_align:"",
+    logo_width:"",
+    logo_height:"",
     title:"",
     subtitle:"",
     demo:"",
@@ -40,12 +45,23 @@ export default function ReadMeMakerProject() {
     setData({...data,[event.target.name]:event.target.value})
   }
 
+  const align_left =()=>{
+    data.logo_align = "left"
+  }
+ 
+   const align_center =()=>{
+     data.logo_align = "center"
+  }
+
+    const align_right =()=>{
+      data.logo_align = "right"
+ }
 
 
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("<h1 align='center'>"+"<![Project Logo]("+data.logo+")>"+"</h1>" + "</br>" + "<h1 align='center'>" + data.title +"</h1>"+"<h3 align='center'>"+data.subtitle+"</h3>"+"<a align='center'> "+"![Project Demo]("+data.demo+")" +"</a> "+"</br>"
+    setValue("<h1 align='"+data.logo_align+"'>"+"<img src='"+data.logo+"' width='"+data.logo_width+"' height='"+data.logo_height+"'/>" + "</br>" + "<h1 align='center'>" + data.title +"</h1>"+"<h3 align='center'>"+data.subtitle+"</h3>"+"<a align='center'> "+"![Project Demo]("+data.demo+")" +"</a> "+"</h1>"+"</br>"
     +"![badges image]("+data.bag_img+")"+ "</br>"+"[Click here]("+data.bag_link+")"+"</br>"
     +data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>"  
     +data.install_dec+ "</br>"+"![Install image]("+data.install_dec_img+")" + "</br>" 
@@ -57,6 +73,8 @@ export default function ReadMeMakerProject() {
     )
   },[data])
 
+
+ 
   return (
     <>
       <Docnav />
@@ -75,6 +93,19 @@ export default function ReadMeMakerProject() {
                   value={data.logo}
                   onChange={changeHandler}
                 />
+              </div>
+
+              <div className="logo_style">
+             
+                <div className="logo_align">
+                <h4>Logo align</h4>
+                  <input type="text" name="logo_align" placeholder="Left,center,right" value={data.logo_align} onChange={changeHandler}/>
+                </div>
+                <div className="logo_dimension">
+                  <h4>Logo dimension</h4>
+                  <input type="text" name="logo_width" placeholder="Width" value={data.logo_width}  onChange={changeHandler}/>
+                  <input type="text" name="logo_height" placeholder="Height" value={data.logo_height}  onChange={changeHandler}/>
+                </div>
               </div>
 
               <div>

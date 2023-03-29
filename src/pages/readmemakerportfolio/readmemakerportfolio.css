@@ -57,6 +57,9 @@ textarea {
 margin-left: 1.5rem;
 }
 
+
+
+
 /*========== Small devices ==========*/
 @media screen and (max-width: 600px) {
   .readmeprotfolio__container {
@@ -79,4 +82,9 @@ margin-left: 1.5rem;
   .readmeportfolio__input div input {
     width: 100%;
   }
+
+  .readmeportfolio__result-box{
+    margin-left: 0;
+    }
+    
 }
