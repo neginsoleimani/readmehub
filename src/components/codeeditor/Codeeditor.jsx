@@ -624,25 +624,107 @@ export default function Codeeditor() {
                     details in an issue comment that may not be relevant or
                     interesting to every reader, you can put those details in a
                     collapsed section.<br></br>Any Markdown within the
-                    <code className="code__small">{"<details>"}</code> block will be
-                    collapsed until the reader clicks ▶ to expand the details.
-                    Within the <code className="code__small">{"<details>"}</code>
-                    block, use the<code className="code__small">{"<summary>"}</code>
+                    <code className="code__small">{"<details>"}</code> block
+                    will be collapsed until the reader clicks ▶ to expand the
+                    details. Within the{" "}
+                    <code className="code__small">{"<details>"}</code>
+                    block, use the
+                    <code className="code__small">{"<summary>"}</code>
                     tag to let readers know what is inside. The label appears to
                     the right of ▶.
                   </p>
                   <div className="code">
                     <code>
                       <span>
-                        {"<details>"}<br></br>
-                        {"<summary>Tips for collapsed sections</summary>"}<br></br><br></br>
-                        {"### You can add a header"}<br></br>
-                        {"You can add text within a collapsed section."}<br></br>
-                        {"You can add an image or a code block, too."}<br></br>
-                        {"```ruby"}<br></br>
-                        {"   puts 'Hello World'"}<br></br>
-                        {"```"}<br></br>
+                        {"<details>"}
+                        <br></br>
+                        {"<summary>Tips for collapsed sections</summary>"}
+                        <br></br>
+                        <br></br>
+                        {"### You can add a header"}
+                        <br></br>
+                        {"You can add text within a collapsed section."}
+                        <br></br>
+                        {"You can add an image or a code block, too."}
+                        <br></br>
+                        {"```ruby"}
+                        <br></br>
+                        {"   puts 'Hello World'"}
+                        <br></br>
+                        {"```"}
+                        <br></br>
                         {"</details>"}
+                      </span>
+                    </code>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tab">
+                <input type="checkbox" id="chck21" />
+                <label className="tab-label" for="chck21">
+                  Create code blocks
+                </label>
+                <div className="tab-content">
+                  <p>
+                    You can create fenced code blocks by placing triple
+                    backticks<code className="code__small">```</code>before and
+                    after the code block. We recommend placing a blank line
+                    before and after code blocks to make the raw formatting
+                    easier to read.
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>
+                        {"```"}
+                        <br></br>
+                        {"function test() {"}
+                        <br></br>
+                        {
+                          "console.log('notice the blank line before this function?');"
+                        }
+                        <br></br>
+                        {"}"}
+                        <br></br>
+                        {"```"}
+                      </span>
+                    </code>
+                  </div>
+                  <p>
+                    You can add an optional language identifier to enable syntax
+                    highlighting in your fenced code block.<br></br>
+                    Syntax highlighting changes the color and style of source
+                    code to make it easier to read.<br></br>
+                    For example, to syntax highlight Ruby code:
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>
+                        ```ruby<br></br> require 'redcarpet'<br></br> markdown =
+                        Redcarpet.new("Hello World!")<br></br> puts
+                        markdown.to_html<br></br> ```
+                      </span>
+                    </code>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tab">
+                <input type="checkbox" id="chck22" />
+                <label className="tab-label" for="chck22">
+                  Creating diagrams
+                </label>
+                <div className="tab-content">
+                  <p>
+                    You can create diagrams in Markdown using three different
+                    syntaxes: mermaid, geoJSON and topoJSON, and ASCII STL.
+                    Diagram rendering is available in GitHub Issues, GitHub
+                    Discussions, pull requests, wikis, and Markdown files.
+                  </p>
+                  <div className="code">
+                    <code>
+                      <span>
+                        Let's rename \*our-new-project\* to \*our-old-project\*.
                       </span>
                     </code>
                   </div>
