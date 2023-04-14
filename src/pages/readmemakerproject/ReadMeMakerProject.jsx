@@ -20,6 +20,9 @@ export default function ReadMeMakerProject() {
     title:"",
     subtitle:"",
     demo:"",
+    demo_align:"",
+    demo_width:"",
+    demo_height:"",
     bag_img:"",
     bag_link:"",
     info:"",
@@ -61,7 +64,7 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("<h1 align='"+data.logo_align+"'>"+"<img src='"+data.logo+"' width='"+data.logo_width+"' height='"+data.logo_height+"'/>" + "</br>" + "<h1 align='center'>" + data.title +"</h1>"+"<h3 align='center'>"+data.subtitle+"</h3>"+"<a align='center'> "+"![Project Demo]("+data.demo+")" +"</a> "+"</h1>"+"</br>"
+    setValue("<h1 align='"+data.logo_align+"'>"+"<img src='"+data.logo+"' width='"+data.logo_width+"' height='"+data.logo_height+"'/>" + "</br>" + "<h1 align='center'>" + data.title +"</h1>"+"<h3 align='center'>"+data.subtitle+"</h3>"+"<h1 align='"+data.demo_align+"'>"+"<img src='"+data.demo+"' width='"+data.demo_width+"' height='"+data.demo_height+"'/>"+"</h1>"+"</br>"
     +"![badges image]("+data.bag_img+")"+ "</br>"+"[Click here]("+data.bag_link+")"+"</br>"
     +data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>"  
     +data.install_dec+ "</br>"+"![Install image]("+data.install_dec_img+")" + "</br>" 
@@ -96,7 +99,6 @@ export default function ReadMeMakerProject() {
               </div>
 
               <div className="logo_style">
-             
                 <div className="logo_align">
                 <h4>Logo align</h4>
                   <input type="text" name="logo_align" placeholder="Left,center,right" value={data.logo_align} onChange={changeHandler}/>
@@ -131,6 +133,18 @@ export default function ReadMeMakerProject() {
                   value={data.demo}
                   onChange={changeHandler}
                 />
+              </div>
+
+              <div className="logo_style">
+                <div className="logo_align">
+                <h4>Demo align</h4>
+                  <input type="text" name="demo_align" placeholder="Left,center,right" value={data.demo_align} onChange={changeHandler}/>
+                </div>
+                <div className="logo_dimension">
+                  <h4>Demo dimension</h4>
+                  <input type="text" name="demo_width" placeholder="Width" value={data.demo_width}  onChange={changeHandler}/>
+                  <input type="text" name="demo_height" placeholder="Height" value={data.demo_height}  onChange={changeHandler}/>
+                </div>
               </div>
 
               <h2>badges</h2>
