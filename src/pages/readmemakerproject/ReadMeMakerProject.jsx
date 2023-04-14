@@ -64,7 +64,7 @@ export default function ReadMeMakerProject() {
   const [value, setValue] = useState()
 
   useEffect(()=>{
-    setValue("<h1 align='"+data.logo_align+"'>"+"<img src='"+data.logo+"' width='"+data.logo_width+"' height='"+data.logo_height+"'/>" + "</br>" + "<h1 align='center'>" + data.title +"</h1>"+"<h3 align='center'>"+data.subtitle+"</h3>"+"<h1 align='"+data.demo_align+"'>"+"<img src='"+data.demo+"' width='"+data.demo_width+"' height='"+data.demo_height+"'/>"+"</h1>"+"</br>"
+    setValue("<h1 align='"+data.logo_align+"'>"+"<img src='"+data.logo+"' width='"+data.logo_width+"' height='"+data.logo_height+"'/>" + "</br>" + data.title +"<h3 align='center'>"+data.subtitle+"</h3>"+"<h1 align='"+data.demo_align+"'>"+"<img src='"+data.demo+"' width='"+data.demo_width+"' height='"+data.demo_height+"'/>"+"</h1>"+"</br>"
     +"![badges image]("+data.bag_img+")"+ "</br>"+"[Click here]("+data.bag_link+")"+"</br>"
     +data.info + "</br>" + data.tec+ "</br>" +data.challenges+ "</br>" + data.future + "</br>"  
     +data.install_dec+ "</br>"+"![Install image]("+data.install_dec_img+")" + "</br>" 
