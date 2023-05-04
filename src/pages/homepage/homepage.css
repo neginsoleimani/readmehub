@@ -44,11 +44,19 @@
   text-align: center;
 }
 
-.feature__title-box h1 {
+.feature__title-box, h1 {
+  margin-bottom: 0.5rem;
+}
+
+.writereadme__title-box, h1{
   margin-bottom: 0.5rem;
 }
 
 .feature__title-box h1 span {
+  color: var(--first-color);
+}
+
+.writereadme__title-box h1 span {
   color: var(--first-color);
 }
 
@@ -87,6 +95,41 @@
 .feature__item p {
   margin-top: 1rem;
 }
+
+.writereadme__title-box{
+text-align: center;
+margin-top: 4.5rem;
+}
+
+.writereadme_dec{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding-top: 2.5rem;
+}
+
+.writereadme__title-box p{
+  margin: 0 auto;
+}
+
+.writereadme_info{
+  background-color: var(--first-color-light);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: -10px 0px 0px 0px #6E40C9; 
+  box-shadow: -10px 0px 0px 0px #6E40C9;
+}
+
+.writereadme_img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.writereadme_info p{
+  font-size: 1rem;
+  text-align: justify;
+}
+
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
@@ -156,4 +199,6 @@
     font-size: 2rem;
     color: var(--first-color);
   }
+
+  
 }

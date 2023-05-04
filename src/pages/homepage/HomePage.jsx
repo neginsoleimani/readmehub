@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
 import Laptop from "../../asset/images/laptop.png";
+import Lamp from "../../asset/images/lamp.svg"
 
 import {
   Flip,
@@ -115,6 +116,7 @@ export default function HomePage() {
 
             </div>
           </div>
+          
         </div>
       </div>
       <Footer />
