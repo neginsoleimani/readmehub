@@ -130,11 +130,6 @@ margin-top: 4.5rem;
   text-align: justify;
 }
 
-.writereadme_dec span{
-color: var(--first-color);
-font-size: 1.3rem;
-font-weight: bold;
-}
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== Small devices ==========*/
@@ -205,33 +200,5 @@ font-weight: bold;
     color: var(--first-color);
   }
 
-
-  .writereadme_dec{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    padding-top: 2.5rem;
-  }
-
-  .writereadme__box h1 {
-    font-size: 1.5rem;
-  }
-
-  .writereadme__box p {
-    font-size: 0.79rem;
-  }
-
-  .writereadme_img img{
-    width: 80%;
-    margin-bottom: 2rem;
-  }
-
-  .writereadme_info{
-    -webkit-box-shadow: 0px -10px 0px 0px #6E40C9; 
-    box-shadow: 0px -10px 0px 0px #6E40C9;
-  }
-
-  .writereadme_info p{
-    font-size: 0.9rem;
-  }
   
 }
