@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
 import Laptop from "../../asset/images/laptop.png";
-import Lamp from "../../asset/images/lamp.svg"
+import Lamp from "../../asset/images/lamp.svg";
+import responsive from "../../asset/images/responsive.svg"
 
 import {
   Flip,
@@ -116,7 +117,9 @@ export default function HomePage() {
 
             </div>
           </div>
-          
+          <div className="homepage__image-box">
+                <img src={responsive} alt="responsive" className="homepage__image" />
+              </div>
         </div>
       </div>
       <Footer />
