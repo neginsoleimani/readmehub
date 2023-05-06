@@ -133,9 +133,13 @@ margin-top: 4.5rem;
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== medium devices ==========*/
-@media screen and (min-width:768px) 
+@media screen and (min-width:540px) 
 and (max-device-width: 1024px) {
 
+
+  .homepage__title-box h1 {
+    font-size: 2rem;
+  }
 
   .homepage__title-box p {
     font-size: 1rem;

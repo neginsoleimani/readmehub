@@ -164,7 +164,7 @@ i {
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== medium devices ==========*/
-@media screen and (min-width:768px) 
+@media screen and (min-width:540px) 
 and (max-device-width: 1024px) {
 .container{
   margin: 0 2.5rem;
