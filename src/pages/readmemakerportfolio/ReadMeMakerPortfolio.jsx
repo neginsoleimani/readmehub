@@ -68,9 +68,12 @@ export default function ReadMeMakerPortfolio() {
         "<p align='center'>" +
         "<img height='165px' src='https://github-readme-stats.vercel.app/api?username=" +
         data.githubUser +
-        "&show_icons=true&bg_color=20232a&color=57bcda&line=c792ea&point=ffffff&title_color=57bcda&icon_color=00c4ff&text_color=ffffff&hide_border=true'>" +`\n`+
-        "<img height='165px' src='https://streak-stats.demolab.com/?user="+data.githubUser+"&stroke=ffffff&&background=20232a&ring=54b6d2&fire=5fd4f4&currStreakNum=ffffff&currStreakLabel=5fd4f4&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true' >"
-        +"</p>"
+        "&show_icons=true&bg_color=20232a&color=57bcda&line=c792ea&point=ffffff&title_color=57bcda&icon_color=00c4ff&text_color=ffffff&hide_border=true'>" +
+        `\n` +
+        "<img height='165px' src='https://streak-stats.demolab.com/?user=" +
+        data.githubUser +
+        "&stroke=ffffff&&background=20232a&ring=54b6d2&fire=5fd4f4&currStreakNum=ffffff&currStreakLabel=5fd4f4&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true' >" +
+        "</p>"
     );
   }, [data]);
 
