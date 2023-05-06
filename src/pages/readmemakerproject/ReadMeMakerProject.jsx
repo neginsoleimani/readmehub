@@ -59,18 +59,7 @@ export default function ReadMeMakerProject() {
     setData({...data,[event.target.name]:event.target.value})
   }
 
-  const align_left =()=>{
-    data.logo_align = "left"
-  }
  
-   const align_center =()=>{
-     data.logo_align = "center"
-  }
-
-    const align_right =()=>{
-      data.logo_align = "right"
- }
-
 
   const [value, setValue] = useState()
 
