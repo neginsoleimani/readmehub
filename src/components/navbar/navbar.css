@@ -27,9 +27,27 @@
 }
 
 
+
+
 /*=============== MEDIA QUERIES ===============*/
+/*========== medium devices ==========*/
+@media screen and (min-width: 1024px) {
+
+}
+
+/*========== medium devices ==========*/
+@media screen and (min-width:539px) 
+and (max-device-width: 1024px) {
+    .navbar{
+        padding: 2.5rem;
+    }
+
+    
+    }
+
 /*========== Small devices ==========*/
-@media screen and (max-width:750px) {
+@media screen and (max-width:480px) 
+and (orientation: portrait){
 
     .navbar{
         padding: 1.5rem;

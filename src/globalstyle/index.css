@@ -163,8 +163,16 @@ i {
 }
 
 /*=============== MEDIA QUERIES ===============*/
+/*========== medium devices ==========*/
+@media screen and (min-width:768px) 
+and (max-device-width: 1024px) {
+.container{
+  margin: 0 2.5rem;
+}
+
+}
 /*========== Small devices ==========*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .container {
     margin: 0 1.5rem;
   }

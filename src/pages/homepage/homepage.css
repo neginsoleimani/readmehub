@@ -132,8 +132,23 @@ margin-top: 4.5rem;
 
 
 /*=============== MEDIA QUERIES ===============*/
+/*========== medium devices ==========*/
+@media screen and (min-width:768px) 
+and (max-device-width: 1024px) {
+
+
+  .homepage__title-box p {
+    font-size: 1rem;
+  }
+
+  .feature__title-box p{
+    font-size: 1rem;
+  }
+
+}
+
 /*========== Small devices ==========*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 480px) {
   .homepage__title-box {
     width: 100%;
     text-align: center;
