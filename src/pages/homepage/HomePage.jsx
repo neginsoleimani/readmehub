@@ -118,7 +118,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="homepage__image-box">
-                <img src={responsive} alt="responsive" className="homepage__image" />
+                {/* <img src={responsive} alt="responsive" className="homepage__image" /> */}
               </div>
         </div>
       </div>
