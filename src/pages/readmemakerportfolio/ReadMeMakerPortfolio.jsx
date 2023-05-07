@@ -19,6 +19,19 @@ export default function ReadMeMakerPortfolio() {
     country: "",
     about:
       " - 🔭 I'm currently ... \n - 🌱 I'm currently ... \n - 👩‍💻 I'm looking to Collaborate on ... \n",
+    skills:"", 
+    icon1:"",
+    icon2:"",
+    icon3:"",
+    icon4:"",
+    icon5:"",
+    gmail:"",
+    instagram:"",
+    telegram:"",
+    linkedin:"", 
+    firstColor:"",
+    secondColor:"",
+    thirdColor:"",
     githubUser: "",
   });
 
@@ -61,19 +74,36 @@ export default function ReadMeMakerPortfolio() {
         "</p>" +
         "<img align='left' src='https://github-readme-stats.vercel.app/api/top-langs/?username=" +
         data.githubUser +
-        "&langs_count=10&title_color=57bcda&text_color=ffffff&icon_color=facc15&bg_color=20232a&locale=en&hide_border=true&custom_title=Top%20%Languages' alt='Top Languages'/>" +
+        "&langs_count=10&title_color="+data.firstColor+"&text_color="+data.secondColor+"&icon_color="+data.secondColor+"&bg_color="+data.thirdColor+"&locale=en&hide_border=true&custom_title=Top%20%Languages' alt='Top Languages'/>" +
+        `\n\n`+"<p align='left'>"+"<img src='"+data.icon1+"' width='32px'>"
+        +"<img src='"+data.icon2+"' width='32px'>"
+        +"<img src='"+data.icon3+"' width='32px'>"
+        +"<img src='"+data.icon4+"' width='32px'>"
+        +"<img src='"+data.icon5+"' width='32px'>"
+        +"</p>"+`\n\n`+data.skills+
         "</br></br></br></br></br></br></br></br></br></br>" +
         "<h1 align='center'>Socials</h1>" +
-        "<h1 align='center'>Stats</h1>" +
+        "<p align='center'>"+
+        `\n`+"<a src='"+data.gmail+"' >"+
+        "<img src='https://img.icons8.com/?size=512&id=UVMl6gMRl2Sq&format=png' width='54px'>"+
+        "</a>"+`\n`+
+        "<a src='"+data.telegram+"' >"+"<img src='https://img.icons8.com/?size=512&id=Ai1GT4W6UPLG&format=png' width='54px'>"+"</a>"+
+        `\n`+
+        "<a src='"+data.linkedin+"' >"+"<img src='https://img.icons8.com/?size=512&id=WyB8Jtm9PZoo&format=png' width='54px'>"+"</a>"+
+        `\n`+
+        "<a src='"+data.instagram+"' >"+"<img src='https://img.icons8.com/?size=512&id=Plswr633TJUP&format=png' width='54px'>"+"</a>"+
+        "</p>"+
+        "<h1 align='center'>Stats</h1>" +       
         "<p align='center'>" +
         "<img height='165px' src='https://github-readme-stats.vercel.app/api?username=" +
         data.githubUser +
-        "&show_icons=true&bg_color=20232a&color=57bcda&line=c792ea&point=ffffff&title_color=57bcda&icon_color=00c4ff&text_color=ffffff&hide_border=true'>" +
+        "&show_icons=true&bg_color="+data.thirdColor+"&color="+data.firstColor+"&line=c792ea&point="+data.secondColor+"&title_color="+data.firstColor+"&icon_color="+data.firstColor+"&text_color="+data.secondColor+"&hide_border=true'>" +
         `\n` +
         "<img height='165px' src='https://streak-stats.demolab.com/?user=" +
         data.githubUser +
-        "&stroke=ffffff&&background=20232a&ring=54b6d2&fire=5fd4f4&currStreakNum=ffffff&currStreakLabel=5fd4f4&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true' >" +
-        "</p>"
+        "&stroke="+data.firstColor+"&&background="+data.thirdColor+"&ring="+data.firstColor+"&fire="+data.firstColor+"&currStreakNum="+data.secondColor+"&currStreakLabel="+data.secondColor+"&sideNums="+data.secondColor+"&sideLabels="+data.secondColor+"&dates="+data.secondColor+"&hide_border=true' >" +
+        "</p>"+`\n`+`\n`+
+        "![Anurag's GitHub stats](https://github-readme-activity-graph.cyclic.app/graph?username="+data.githubUser+"&show_icons=true&bg_color="+data.thirdColor+"&color="+data.secondColor+"&line="+data.firstColor+"&point="+data.secondColor+"&custom_title=GitHub%20Commits%20Graph&hide_border=true)"
     );
   }, [data]);
 
@@ -163,19 +193,125 @@ export default function ReadMeMakerPortfolio() {
 
               <div>
                 <h2>Skills</h2>
-                <h4>Choose your skills :</h4>
-                <h4>Top languages</h4>
+                <h4>Skills icon </h4>
                 <input
-                  name="githubUser"
+                  name="icon1"
                   type="text"
-                  placeholder={"Github username"}
-                  value={data.githubUser}
+                  placeholder={"Url"}
+                  value={data.icon1}
+                  onChange={changeHandler}
+                />
+                 <input
+                  name="icon2"
+                  type="text"
+                  placeholder={"Url"}
+                  value={data.icon2}
+                  onChange={changeHandler}
+                />
+                 <input
+                  name="icon3"
+                  type="text"
+                  placeholder={"Url"}
+                  value={data.icon3}
+                  onChange={changeHandler}
+                />
+                 <input
+                  name="icon4"
+                  type="text"
+                  placeholder={"Url"}
+                  value={data.icon4}
+                  onChange={changeHandler}
+                />
+                 <input
+                  name="icon5"
+                  type="text"
+                  placeholder={"Url"}
+                  value={data.icon5}
+                  onChange={changeHandler}
+                />
+
+                <h4>Write about your skills</h4>
+                <textarea
+                  type="text"
+                  cols="20"
+                  rows="5"
+                  name="skills"
+                  value={data.skills}
+                  placeholder={"Write ..."}
                   onChange={changeHandler}
                 />
               </div>
 
               <div>
                 <h2>Socials</h2>
+                <h4>Gmail</h4>
+                <input
+                  name="gmail"
+                  type="text"
+                  placeholder={"Example@gmail.com"}
+                  value={data.gmail}
+                  onChange={changeHandler}
+                />
+                <h4>Instagram</h4>
+                <input
+                  name="instagram"
+                  type="text"
+                  placeholder={"Url"}
+                  value={data.instagram}
+                  onChange={changeHandler}
+                />
+                <h4>Linkedin</h4>
+                <input
+                  name="linkedin"
+                  type="text"
+                  placeholder={"Url"}
+                  value={data.linkedin}
+                  onChange={changeHandler}
+                />
+                <h4>Telegram</h4>
+                <input
+                  name="telegram"
+                  type="text"
+                  placeholder={"Url"}
+                  value={data.telegram}
+                  onChange={changeHandler}
+                />
+              </div>
+
+              <div>
+                <h2>Stats customize</h2>
+                <h4>First color</h4>
+                <input
+                  name="firstColor"
+                  type="text"
+                  placeholder={"#Hex"}
+                  value={data.firstColor}
+                  onChange={changeHandler}
+                />
+                <h4>Second color</h4>
+                <input
+                  name="secondColor"
+                  type="text"
+                  placeholder={"#Hex"}
+                  value={data.secondColor}
+                  onChange={changeHandler}
+                />
+                <h4>Third color</h4>
+                <input
+                  name="thirdColor"
+                  type="text"
+                  placeholder={"#Hex"}
+                  value={data.thirdColor}
+                  onChange={changeHandler}
+                />
+                <h4>Github username</h4>
+                <input
+                  name="githubUser"
+                  type="text"
+                  placeholder={"Username"}
+                  value={data.githubUser}
+                  onChange={changeHandler}
+                />
               </div>
             </div>
           </div>
