@@ -280,7 +280,7 @@ export default function ReadMeMakerPortfolio() {
 
               <div>
                 <h2>Stats customize</h2>
-                <h4>First color</h4>
+                <h4>Icon color</h4>
                 <input
                   name="firstColor"
                   type="text"
@@ -288,7 +288,7 @@ export default function ReadMeMakerPortfolio() {
                   value={data.firstColor}
                   onChange={changeHandler}
                 />
-                <h4>Second color</h4>
+                <h4>Text color</h4>
                 <input
                   name="secondColor"
                   type="text"
@@ -296,7 +296,7 @@ export default function ReadMeMakerPortfolio() {
                   value={data.secondColor}
                   onChange={changeHandler}
                 />
-                <h4>Third color</h4>
+                <h4>Background color</h4>
                 <input
                   name="thirdColor"
                   type="text"

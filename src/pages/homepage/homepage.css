@@ -129,7 +129,10 @@ margin-top: 4.5rem;
   font-size: 1rem;
   text-align: justify;
 }
-
+.qrcode__container{
+  display: grid;
+  grid-template-columns:0.6fr 1.4fr;
+}
 
 /*=============== MEDIA QUERIES ===============*/
 /*========== medium devices ==========*/
@@ -149,6 +152,16 @@ and (max-device-width: 1024px) {
   .feature__title-box p{
     font-size: 1rem;
   }
+
+  .Qrcode{
+    width: 500px;
+  }
+
+  .qrcode__container{
+    display: grid;
+    grid-template-columns:1fr;
+  }
+
 
 }
 
@@ -218,6 +231,15 @@ and (max-device-width: 1024px) {
   .feature__icon i {
     font-size: 2rem;
     color: var(--first-color);
+  }
+
+  .Qrcode{
+    width: 300px;
+  }
+
+  .qrcode__container{
+    display: grid;
+    grid-template-columns:1fr;
   }
 
   
