@@ -453,10 +453,10 @@ export default function Codeeditor() {
                   </div>
                   <p>
                     For a full list of available emoji and codes, see
-                    <a href="https://github.com/ikatyang/emoji-cheat-sheet">
-                      Here
+                    <a href="https://github.com/ikatyang/emoji-cheat-sheet" style={{color:'#959da5',paddingLeft:'5px'}}>
+                       Here
                     </a>
-                    .
+                      .
                   </p>
                 </div>
               </div>
@@ -495,23 +495,7 @@ export default function Codeeditor() {
                   </div>
                 </div>
               </div>
-              <div className="tab">
-                <input type="checkbox" id="chck16" />
-                <label className="tab-label" for="chck16">
-                  Hiding content
-                </label>
-                <div className="tab-content">
-                  <p>
-                    You can tell GitHub to hide content from the rendered
-                    Markdown by placing the content in an HTML comment.
-                  </p>
-                  <div className="code">
-                    <code>
-                      <span>help</span>
-                    </code>
-                  </div>
-                </div>
-              </div>
+
               <div className="tab">
                 <input type="checkbox" id="chck17" />
                 <label className="tab-label" for="chck17">
@@ -709,27 +693,6 @@ export default function Codeeditor() {
                 </div>
               </div>
 
-              <div className="tab">
-                <input type="checkbox" id="chck22" />
-                <label className="tab-label" for="chck22">
-                  Creating diagrams
-                </label>
-                <div className="tab-content">
-                  <p>
-                    You can create diagrams in Markdown using three different
-                    syntaxes: mermaid, geoJSON and topoJSON, and ASCII STL.
-                    Diagram rendering is available in GitHub Issues, GitHub
-                    Discussions, pull requests, wikis, and Markdown files.
-                  </p>
-                  <div className="code">
-                    <code>
-                      <span>
-                        Let's rename \*our-new-project\* to \*our-old-project\*.
-                      </span>
-                    </code>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

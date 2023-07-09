@@ -16,10 +16,9 @@ export default function Footer() {
       </div>
       <div className='footer__link-box'>
         <div className='footer__link-icons'>
-          <a href="#"><i className="bi bi-linkedin"></i></a>
-          <a href="#"><i className="bi bi-twitter"></i></a>
-          <a href="https://instagram.com/"><i className='bi bi-instagram'></i></a>
-          <a href="https://github.com/"><i className='bi bi-github'></i></a>
+          <a href="https://www.linkedin.com/in/neginsoleimani/"><i className="bi bi-linkedin"></i></a>
+          <a href="https://instagram.com/negin.soleimani_pv"><i className='bi bi-instagram'></i></a>
+          <a href="https://github.com/mammaddrik/readmehub"><i className='bi bi-github'></i></a>
         </div>
       </div>
     </div>

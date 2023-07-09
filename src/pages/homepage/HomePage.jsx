@@ -4,7 +4,7 @@ import "./homepage.css";
 import Laptop from "../../asset/images/laptop.png";
 import Lamp from "../../asset/images/lamp.svg";
 import responsive from "../../asset/images/responsive.svg"
-
+import Qrcode from "../../asset/images/QRcode.png"
 import {
   Flip,
   Roll,
@@ -70,7 +70,7 @@ export default function HomePage() {
                 <h1>
                   About README<span>hub</span>
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>README is a file commonly found in software projects that serves as a guide.</p>
               </div>
             </Fade>
             <div className="feature__items">
@@ -81,7 +81,7 @@ export default function HomePage() {
                   <i className="bi bi-code-square"></i>
                 </div>
                 <h4>Show your skills</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <p>Provides an opportunity for individuals to showcase their abilities and expertise in particular field.</p>
               </div>
               </Zoom>
 
@@ -91,7 +91,7 @@ export default function HomePage() {
                     <i className="bi bi-lightning-charge-fill"></i>
                   </div>
                   <h4>Easy to use</h4>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                  <p>We prioritize ease of use and value an intuitive and straightforward platform</p>
                 </div>
               </Zoom>
 
@@ -101,7 +101,7 @@ export default function HomePage() {
                   <i className="bi bi-share-fill"></i>
                 </div>
                 <h4>Share your Social Network</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <p>Is a great way to expend your online presence and connect with others</p>
               </div>
               </Zoom>
 
@@ -111,15 +111,22 @@ export default function HomePage() {
                   <i className="bi bi-graph-up"></i>
                 </div>
                 <h4>Analyze your State</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <p>Analyze your state is a process of evaluating the conditions, strengths, and weaknesses</p>
               </div>
               </Zoom>
 
             </div>
           </div>
+
+          <div className="qrcode__container">
           <div className="homepage__image-box">
-                {/* <img src={responsive} alt="responsive" className="homepage__image" /> */}
+                <img src={Qrcode} alt="Qrcode" className="Qrcode" />
               </div>
+              <div className="homepage__image-box">
+                <img src={responsive} alt="responsive" className="homepage__image" />
+              </div>
+          </div>
+
         </div>
       </div>
       <Footer />
