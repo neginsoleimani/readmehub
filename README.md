@@ -25,6 +25,8 @@ This is part of our university student projects, and it can be said that it is o
 
 <h1 align="center">Demo</h1>
 
+![READMEhub.png](https://i.postimg.cc/J4PGpLS8/READMEhub.png)
+
 <h1 align="center">Description</h1>
 
 The web application is made of three main parts:
