@@ -2,6 +2,7 @@
 <h1 align="center">READMEhub</h1>
 <h2 align="center">Create an amazing Github profile in minutes</h2>
 
+
 <h1 align="center">general information</h1>
 <details><summary>What is the README?</summary><br clear="both">A README is a text file that introduces and explains a project. It contains information that is commonly required to understand what the project is about.</details><br clear="both">
 
