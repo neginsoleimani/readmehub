@@ -27,4 +27,5 @@
 <h1 align="center"><br>READMEhub</h1>
 
 <img align="left" height="150" src="https://i.postimg.cc/mrCddSLB/favicon.png"  /><p align="left">Create an amazing Github profile in minutes.<br>
-This is a web application that has been built using HTML, CSS, and JavaScript, and has been developed using React framework.</p>
+This is a web application that has been built using HTML, CSS, and JavaScript, and has been developed using React framework.<br>
+This is part of our university student projects, and it can be said that it is one of our first group assignments.</p>
