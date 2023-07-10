@@ -31,7 +31,24 @@ The web application is made of three main parts:
 3. Create Protfolio.
 
 <h3>Document</h3>
+It includes the introduction of all the documents related to writing a README file, the existence of a kernel to test the documents simultaneously with.
 
 <h3>Create Readme for my Project</h3>
+In this section of the entry to get the information needed to write a README file for the repository that includes:
+
+- Repository name.
+- Explanations about the repository.
+- Demo version of the repository.
+- License.
+- Repository.
+- How to install and use the repository.
 
 <h3>Create Protfolio</h3>
+has a number of entries to receive the information of the programmer, which includes the information needed to create a resume, for example:
+
+- The name and surname of the programmer.
+- Programming skills.
+- Programmer work experience.
+- Ways to contact the developer.
+
+Also, this section has a number of graphs to analyze each person's GitHub account. These graphs show the amount of coding each person has done throughout the year. It also shows the language in which each person has written their codes and displays information such as the number of visits to the account. It also shows the number of received stars in this section.
