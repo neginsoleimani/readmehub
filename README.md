@@ -25,9 +25,16 @@ This is a web application that has been built using HTML, CSS and JavaScript and
 This is part of our university student projects, and it can be said that it is one of our first group assignments. We know that the application is not perfect and many more things need to be added, but we hope to make it more complete in the future.</p>
 
 <h1 align="center">Demo</h1>
-<p align="left">Create an amazing Github profile in minutes.<br></p><img align="center"" src="https://i.postimg.cc/J4PGpLS8/READMEhub.png" />
-<br>
 
+
+<p align="left">Hello World!!</p>
+
+
+<div align="center">
+  <img src="https://i.postimg.cc/J4PGpLS8/READMEhub.png"  />
+</div>
+
+<br>
 <h1 align="center">Description</h1>
 
 The web application is made of three main parts:
