@@ -1,6 +1,7 @@
-<img align="left" height="200" src="https://i.postimg.cc/mrCddSLB/favicon.png"  />
-<h1 align="center">READMEhub</h1>
-<h2 align="center">Create an amazing Github profile in minutes</h2>
+
+
+
+
 
 <br clear="both">
 <h1 align="center">general information</h1>
@@ -23,5 +24,7 @@
 
 <details><br clear="both"><summary>What is Markdown?</summary><br clear="both"><img align="left" height="150" src="https://i.postimg.cc/NMxN17YF/Markdown-mark-svg.png"  />Markdown is a markup language just like HTML, allowing you to format your online content in plain text. While some prefer to use it in order to publish content with the .md or .markdown output, others prefer it purely for the writing experience it offers.<br>Users with a tech background tend to love the smooth writing experience it offers, as it allows both writing and formatting to flow in a similar way as the coding way. However, not everyone is used to or fond of this experience.<br>This is because learning Markdown from scratch is not easy, and this is especially true if you have never coded before. Not only do you have to learn formatting with syntax, but you also have to learn a whole new writing experience. This usually requires a big change in one's writing habits.</details>
 
+<h1 align="center"><br>READMEhub</h1>
 
-
+<img align="left" height="150" src="https://i.postimg.cc/mrCddSLB/favicon.png"  /><p align="left">Create an amazing Github profile in minutes.<br>
+This is a web application that has been built using HTML, CSS, and JavaScript, and has been developed using React framework.</p>
