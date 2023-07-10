@@ -26,6 +26,10 @@ This is part of our university student projects, and it can be said that it is o
 
 <h1 align="center">Demo</h1>
 
+| access the site| Try|
+| :--- | :---: |
+| Link                                | This site was built using [GitHub Pages](https://readmehub.netlify.app/). | 
+| QR Code                        | ![This is an image](https://i.postimg.cc/cJHHGyGx/image.png) 
 
 <p align="left">Hello World!!</p>
 
