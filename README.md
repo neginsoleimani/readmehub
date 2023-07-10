@@ -1,10 +1,4 @@
-
-
-
-
-
-<br clear="both">
-<h1 align="center">general information</h1>
+<h1 align="center">About README File</h1>
 <details><summary>What is the README?</summary><br clear="both">A README is a text file that introduces and explains a project. It contains information that is commonly required to understand what the project is about.</details><br clear="both">
 
 <details><br clear="both"><summary>Why should I make it?</summary>It's an easy way to answer questions that your audience will likely have regarding how to install and use your project and also how to collaborate with you.</details>
@@ -27,4 +21,6 @@
 <h1 align="center">READMEhub</h1>
 <img align="left" height="150" src="https://i.postimg.cc/mrCddSLB/favicon.png"  /><p align="left">Create an amazing Github profile in minutes.<br>
 This is a web application that has been built using HTML, CSS, and JavaScript, and has been developed using React framework.<br>
-This is part of our university student projects, and it can be said that it is one of our first group assignments.</p>
+This is part of our university student projects, and it can be said that it is one of our first group assignments. We know that the application is not perfect and many more things need to be added, but we hope to make it more complete in the future.</p>
+
+<h1 align="center">Description</h1>
