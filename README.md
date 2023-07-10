@@ -26,23 +26,20 @@ This is part of our university student projects, and it can be said that it is o
 
 <h1 align="center">Demo</h1>
 
-
-
-<p align="left">Hello World!!</p>
-
+<p>The entire site uses responsive design and runs correctly on any device of any size. Accessing the site is very easy, just use the table below.</p>
 
 <div align="center">
 
 | Access the Site| Try|
 | :--- | :---:   |
-| Link           | Click [Here](https://readmehub.netlify.app/).           | 
+| Link           | Click [Here](https://readmehub.netlify.app/)           | 
 | QR Code        | ![QRcode.png](https://i.postimg.cc/3NQxwtgc/QRcode.png)
 
   <img src="https://i.postimg.cc/J4PGpLS8/READMEhub.png"  />
 </div>
 
 <br>
-<h1 align="center">Description</h1>
+<h2>Description</h2>
 
 The web application is made of three main parts:
 1. Document.
@@ -77,3 +74,24 @@ has a number of entries to receive the information of the programmer, which incl
 Also, this section has a number of graphs to analyze each person's GitHub account. These graphs show the amount of coding each person has done throughout the year. It also shows the language in which each person has written their codes and displays information such as the number of visits to the account. It also shows the number of received stars in this section.
 
 ![protfolio.png](https://i.postimg.cc/SKzFY6c5/protfolio.png)
+
+
+<h2>Installation</h2>
+
+> **Note:** You need Node.js to install this program.<br>
+> Click to download [Node.js](https://nodejs.org/en/download).
+
+```
+git clone https://github.com/mammaddrik/readmehub.git
+cd readmehub
+npm i or npm install
+npm start
+```
+> **Note:** It may take a long time to install the program and its required packages, so be patient until it is fully installed<br>
+
+
+<h2>Installation</h2>
+
+readmehub is licensed under [MIT License](https://github.com/mammaddrik/readmehub/blob/main/LICENSE).
+
+<p align="right"><a href="#top">back to top</a></p>
