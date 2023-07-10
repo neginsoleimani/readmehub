@@ -20,7 +20,18 @@
 
 <h1 align="center">READMEhub</h1>
 <img align="left" height="150" src="https://i.postimg.cc/mrCddSLB/favicon.png"  /><p align="left">Create an amazing Github profile in minutes.<br>
-This is a web application that has been built using HTML, CSS, and JavaScript, and has been developed using React framework.<br>
+This is a web application that has been built using HTML, CSS and JavaScript and has been developed using React framework.<br>
 This is part of our university student projects, and it can be said that it is one of our first group assignments. We know that the application is not perfect and many more things need to be added, but we hope to make it more complete in the future.</p>
 
 <h1 align="center">Description</h1>
+
+The web application is made of three main parts:
+1. Document.
+2. Create Readme for my Project.
+3. Create Protfolio.
+
+<h3>Document</h3>
+
+<h3>Create Readme for my Project</h3>
+
+<h3>Create Protfolio</h3>
