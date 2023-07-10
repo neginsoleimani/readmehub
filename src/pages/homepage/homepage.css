@@ -62,6 +62,7 @@
 
 .feature__items {
   margin: 2rem auto;
+  padding: 32px;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -131,7 +132,7 @@ margin-top: 4.5rem;
 }
 .qrcode__container{
   display: grid;
-  grid-template-columns:0.6fr 1.4fr;
+  grid-template-columns:1.4fr 0.6fr;
 }
 
 /*=============== MEDIA QUERIES ===============*/

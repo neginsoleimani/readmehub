@@ -69,19 +69,24 @@ export default function HomePage() {
                 <h1>
                   About README<span>hub</span>
                 </h1>
-                <p>README is a file commonly found in software projects that serves as a guide.</p>
+                <p>
+                  README is a file commonly found in software projects that
+                  serves as a guide.
+                </p>
               </div>
             </Fade>
             <div className="feature__items">
-
-            <Zoom triggerOnce={"true"} delay={1000}>
-              <div className="feature__item">
-                <div className="feature__icon">
-                  <i className="bi bi-code-square"></i>
+              <Zoom triggerOnce={"true"} delay={1000}>
+                <div className="feature__item">
+                  <div className="feature__icon">
+                    <i className="bi bi-code-square"></i>
+                  </div>
+                  <h4>Show your skills</h4>
+                  <p>
+                    Provides an opportunity for individuals to showcase their
+                    abilities and expertise in particular field.
+                  </p>
                 </div>
-                <h4>Show your skills</h4>
-                <p>Provides an opportunity for individuals to showcase their abilities and expertise in particular field.</p>
-              </div>
               </Zoom>
 
               <Zoom triggerOnce={"true"} delay={1100}>
@@ -90,42 +95,62 @@ export default function HomePage() {
                     <i className="bi bi-lightning-charge-fill"></i>
                   </div>
                   <h4>Easy to use</h4>
-                  <p>We prioritize ease of use and value an intuitive and straightforward platform</p>
+                  <p>
+                    We prioritize ease of use and value an intuitive and
+                    straightforward platform
+                  </p>
                 </div>
               </Zoom>
 
               <Zoom triggerOnce={"true"} delay={1200}>
-              <div className="feature__item">
-                <div className="feature__icon">
-                  <i className="bi bi-share-fill"></i>
+                <div className="feature__item">
+                  <div className="feature__icon">
+                    <i className="bi bi-share-fill"></i>
+                  </div>
+                  <h4>Share your Social Network</h4>
+                  <p>
+                    Is a great way to expend your online presence and connect
+                    with others
+                  </p>
                 </div>
-                <h4>Share your Social Network</h4>
-                <p>Is a great way to expend your online presence and connect with others</p>
-              </div>
               </Zoom>
 
               <Zoom triggerOnce={"true"} delay={1300}>
-              <div className="feature__item">
-                <div className="feature__icon">
-                  <i className="bi bi-graph-up"></i>
+                <div className="feature__item">
+                  <div className="feature__icon">
+                    <i className="bi bi-graph-up"></i>
+                  </div>
+                  <h4>Analyze your State</h4>
+                  <p>
+                    Analyze your state is a process of evaluating the
+                    conditions, strengths, and weaknesses
+                  </p>
                 </div>
-                <h4>Analyze your State</h4>
-                <p>Analyze your state is a process of evaluating the conditions, strengths, and weaknesses</p>
-              </div>
               </Zoom>
-
             </div>
           </div>
-
-          <div className="qrcode__container">
-          <div className="homepage__image-box">
-                <img src={Qrcode} alt="Qrcode" className="Qrcode" />
-              </div>
-              <div className="homepage__image-box">
-                <img src={responsive} alt="responsive" className="homepage__image" />
-              </div>
+          <div className="feature__title-box">
+            <h1>
+              Access to the <span>site</span>
+            </h1>
+            <p>
+              readmehub is fully responsive, scan the QR code to access the
+              site on your mobile phone.
+            </p>
           </div>
+          <div className="qrcode__container">
 
+            <div className="homepage__image-box">
+              <img
+                src={responsive}
+                alt="responsive"
+                className="homepage__image"
+              />
+            </div>
+            <div className="homepage__image-box">
+              <img src={Qrcode} alt="Qrcode" className="Qrcode" />
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
