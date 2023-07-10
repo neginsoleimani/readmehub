@@ -90,7 +90,7 @@ npm start
 > **Note:** It may take a long time to install the program and its required packages, so be patient until it is fully installed<br>
 
 
-<h2>Installation</h2>
+<h2>License</h2>
 
 readmehub is licensed under [MIT License](https://github.com/mammaddrik/readmehub/blob/main/LICENSE).
 

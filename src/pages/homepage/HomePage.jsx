@@ -134,7 +134,7 @@ export default function HomePage() {
               Access to the <span>site</span>
             </h1>
             <p>
-              readmehub is fully responsive, scan the QR code to access the
+              READMEhub is fully responsive, scan the QR code to access the
               site on your mobile phone.
             </p>
           </div>
